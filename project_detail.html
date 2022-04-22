@@ -72,7 +72,7 @@
                 <ul id="fp-menu">
                     <li data-menuanchor="detailHero" class="active"><a href="#detailHero">Proje detayı</a></li>
                     <li data-menuanchor="detailPlain"><a href="#detailPlain">Daire planları</a></li>
-                    <li data-menuanchor="detailSuit"><a href="#detailSuit">Daire planları</a></li>
+                    <li data-menuanchor="detailSuit"><a href="#detailSuit">Dış Cephe</a></li>
                     <li data-menuanchor="detail3D"><a href="#detail3D">Daire planları</a></li>
                     <li data-menuanchor="detailTransport"><a href="#detailTransport">Daire planları</a></li>
                     <li data-menuanchor="detailDrone"><a href="#detailDrone">Daire planları</a></li>
@@ -256,6 +256,14 @@
                             </div>
                             <!-- End Plain -->
 
+                            <!-- Back Face
+                            =============== -->
+                            <div class="fp-section fp-auto-height-responsive h-100 overflow-hidden">
+                                <div class="project_detail_backface" id="backface">
+                                    <div class="container-fluid gx-0 overflow-hidden"></div>
+                                </div>
+                            </div>
+                            <!-- End Back Face -->
                         </div>
                     </div>
                 </div>
@@ -277,7 +285,7 @@
     <script>
         var myFullpage = new fullpage('.fullpage', {
             // anchors: ['hero', 'plain', 'suit', '3d', 'transport', 'drone', 'our'],
-            anchors: ['detailHero', 'detailPlain'],
+            anchors: ['detailHero', 'detailPlain', 'detailBackFace'],
             menu: '#fp-menu',
             responsiveWidth: 992,
             autoScrolling: true,
