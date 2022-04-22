@@ -1,0 +1,53 @@
+@use 'global'as g;
+@use 'mixin'as m;
+
+
+.detail_nav {
+    ul {
+        li {
+            position: relative;
+            padding-left: 20px;
+            padding: 10px 0px;
+            text-align: center;
+            &.active {
+                 color: g.$purple!important;
+                 background: g.$gray;
+                 font-weight: bold;
+                 &::after {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 10px;
+                    background-color: g.$darkPurple;
+                 }
+            }
+        }
+    }
+}
+
+
+.icon_wrapper {
+    position: absolute;
+    bottom: 40px;
+    &_in {
+        background: rgba($color: g.$darkPurple, $alpha: .95);
+        text-align: center;
+        width: 750px;
+        max-width: 100%;
+        padding: 10px;
+        .icon_item {
+            span {
+                display: block;
+                color: g.$white;
+                padding: 10px 0px;
+                &:nth-child(1) {
+                    text-transform: uppercase;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
