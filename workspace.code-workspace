@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "mp3",
+			"path": "..\\Completed_YASKA\\de-v3-tester\\mp3"
+		},
+		{
+			"name": "_Paipurth",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "_Paipurth"
+	}
+}

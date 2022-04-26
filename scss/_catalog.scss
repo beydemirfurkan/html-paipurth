@@ -2,65 +2,42 @@
 @use 'mixin' as m;
 
 
-.pdf-view{
-    height: 100vh;
 
-    .navbar{
-        top: 10px;
-        z-index: 999;
-    }
-
-    .navbar-menu a{
-        color: #000 !important;
-    }
-
-    .navbar-logo{
-        
-        span{
-            color: #000 !important;
-        }
-    }
-
-    .submenu ul a:hover{
-        color: #fff !important;
-    }
-
-    .zuruck{
-        z-index: 984217465541;
-        
-        a{
-            background: #d5a080;
-            font-size: 13px;
-            letter-spacing: 1px;
-            margin-bottom: 30px;
-            padding: 11px 35px 10px;
-        }
-    }
+  //karl viewer
+  ///////////////////////////////////////
+  .karl-viewer{
 
     &-wrap{
-        
-        .flipbook-main-wrapper {
-            top: 130px;
-            bottom: 10px;
-        }
-
-        .flipbook-bookLayer{
-            top: 50px !important;
-            bottom: 100px !important;
-        }
+        padding: 50px 0px;
     }
 
-    &-content{
-        z-index: 99;
+    &-book{
+     position: relative;
+     min-height: 225px;
+
+     @include g.responsive(768){
+       min-height: 650px;
+     }
+
+     @include g.responsive(1200){
+       position: static;
+     }
+    }
+    
+
+    @include g.responsive(1200){     
+      &-content{
+        position: absolute;
+        right: 0;
+        z-index: 987554;
         top: 100px;
-
-        h2{
-            font-weight: 500;
-            line-height: 45px;
-            color: #6e605c;
-            letter-spacing: -2px;
-            font-size: 30px;
-            font-weight: 600;
-        }
+        width: calc(100% - 100px);
+      }
+      
+      .flipbook-main-wrapper{
+        top: 190px;
+      }
     }
-}
+
+  }
+  

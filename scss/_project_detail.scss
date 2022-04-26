@@ -169,62 +169,52 @@
     }
 }
 
-  //karl viewer
-  ///////////////////////////////////////
-  .karl-viewer{
 
-    &-wrap{
-      padding-top: 50px;
-      padding-bottom: 50px;
+
+
+.news_text_wrapper {
+    position: relative;
+    background: rgba($color: g.$darkPurple, $alpha: .95);
+    width: 700px;
+    min-height: 80px;
+    color: g.$white;
+    font-size: 1.8rem;
+    margin-top: -100px;
+    z-index: 44;
+    padding: 20px;
+    left: -50px;
+}
+
+
+.project_detail_footer {
+    background: transparent;
+    .footerForm {
+        .form-control {
+            background: transparent;
+            border: 0;
+            border-radius: 0;
+            border-bottom: 1.5px solid #000;
+            color: rgb(17, 17, 17);
+            font-size: .9rem;
+            margin: 10px 0px;
+            position: relative;
+            &:focus {
+                box-shadow: 0;
+            }
+        }
+        textarea {
+            &::placeholder {
+                position: absolute;
+                bottom: 10px;
+            }
+        }
     }
+}
 
-    &-book{
-     position: relative;
-     min-height: 225px;
-
-     @include g.responsive(768){
-       min-height: 400px;
-     }
-
-     @include g.responsive(1200){
-       padding-left: 150px;
-       position: static;
-     }
+#footers {
+    .fp-tableCell {
+        height: 500px!important;
+        vertical-align: top!important;
     }
-    
-
-    @include g.responsive(1200){
-      &-wrap{
-        padding-top: 170px;
-      }
-    
-      &-content{
-        position: absolute;
-        right: 0;
-        z-index: 987554;
-        top: 100px;
-        width: calc(100% - 100px);
-      }
-      
-      .flipbook-main-wrapper{
-        top: 190px;
-        left: 120px;
-      }
-    }
-
-    @include g.responsive(1500){
-          
-      &-content{
-        top: 110px;
-      }
-    }
-
-    @include g.responsive(1900){
-          
-      &-content{
-        top: 140px;
-      }
-    }
-  }
-  
+}
 

@@ -787,9 +787,47 @@ section.reference .swiper_reference .swiper-slide img {
   background: rgba(122, 129, 185, 0.95);
 }
 
+.news_text_wrapper {
+  position: relative;
+  background: rgba(61, 65, 93, 0.95);
+  width: 700px;
+  min-height: 80px;
+  color: #fff;
+  font-size: 1.8rem;
+  margin-top: -100px;
+  z-index: 44;
+  padding: 20px;
+  left: -50px;
+}
+
+.project_detail_footer {
+  background: transparent;
+}
+.project_detail_footer .footerForm .form-control {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1.5px solid #000;
+  color: #111111;
+  font-size: 0.9rem;
+  margin: 10px 0px;
+  position: relative;
+}
+.project_detail_footer .footerForm .form-control:focus {
+  box-shadow: 0;
+}
+.project_detail_footer .footerForm textarea::placeholder {
+  position: absolute;
+  bottom: 10px;
+}
+
+#footers .fp-tableCell {
+  height: 500px !important;
+  vertical-align: top !important;
+}
+
 .karl-viewer-wrap {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 0px;
 }
 .karl-viewer-book {
   position: relative;
@@ -797,19 +835,15 @@ section.reference .swiper_reference .swiper-slide img {
 }
 @media (min-width: 768px) {
   .karl-viewer-book {
-    min-height: 400px;
+    min-height: 650px;
   }
 }
 @media (min-width: 1200px) {
   .karl-viewer-book {
-    padding-left: 150px;
     position: static;
   }
 }
 @media (min-width: 1200px) {
-  .karl-viewer-wrap {
-    padding-top: 170px;
-  }
   .karl-viewer-content {
     position: absolute;
     right: 0;
@@ -819,65 +853,7 @@ section.reference .swiper_reference .swiper-slide img {
   }
   .karl-viewer .flipbook-main-wrapper {
     top: 190px;
-    left: 120px;
   }
-}
-@media (min-width: 1500px) {
-  .karl-viewer-content {
-    top: 110px;
-  }
-}
-@media (min-width: 1900px) {
-  .karl-viewer-content {
-    top: 140px;
-  }
-}
-
-.pdf-view {
-  height: 100vh;
-}
-.pdf-view .navbar {
-  top: 10px;
-  z-index: 999;
-}
-.pdf-view .navbar-menu a {
-  color: #000 !important;
-}
-.pdf-view .navbar-logo span {
-  color: #000 !important;
-}
-.pdf-view .submenu ul a:hover {
-  color: #fff !important;
-}
-.pdf-view .zuruck {
-  z-index: 984217465541;
-}
-.pdf-view .zuruck a {
-  background: #d5a080;
-  font-size: 13px;
-  letter-spacing: 1px;
-  margin-bottom: 30px;
-  padding: 11px 35px 10px;
-}
-.pdf-view-wrap .flipbook-main-wrapper {
-  top: 130px;
-  bottom: 10px;
-}
-.pdf-view-wrap .flipbook-bookLayer {
-  top: 50px !important;
-  bottom: 100px !important;
-}
-.pdf-view-content {
-  z-index: 99;
-  top: 100px;
-}
-.pdf-view-content h2 {
-  font-weight: 500;
-  line-height: 45px;
-  color: #6e605c;
-  letter-spacing: -2px;
-  font-size: 30px;
-  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

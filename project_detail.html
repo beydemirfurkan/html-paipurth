@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
         integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="css/flipbook.style.css">
+    <link rel="stylesheet" href="css/flipbook.style.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -78,11 +78,12 @@
                     <li data-menuanchor="detailTransport"><a href="#detailTransport">Çevre ve ulaşım</a></li>
                     <li data-menuanchor="detailSocial"><a href="#detailSocial">Paipurth City Farkı</a></li>
                     <li data-menuanchor="detailDrone"><a href="#detailDrone">Drone çekimi</a></li>
-                    <li data-menuanchor="detailOur"><a href="#detailOur">Daire planları</a></li>
+                    <li data-menuanchor="detailCatalog"><a href="#detailCatalog">Katalog</a></li>
+                    <li data-menuanchor="detailNews"><a href="#detailNews">Haberler</a></li>
                 </ul>
             </div>
         </div>
-        <div class="fullpage overflow-hidden">
+        <div class="fullpage">
             <div class="project_detail_wrapper">
                 <div class="container-fluid gx-0">
                     <div class="row align-items-start justify-content-between">
@@ -105,7 +106,7 @@
 
                             <!-- Plain 
                             ================= -->
-                            <div class="section fp-auto-height-responsive h-100">
+                            <div class="section fp-auto-height-responsive h-100 pt-5">
                                 <div class="project_detail_plain h-100" id="plain">
                                     <div class="container-fluid gx-0 h-100">
                                         <div class="row justify-content-between">
@@ -281,7 +282,7 @@
                             =============== -->
                             <div class="section fp-auto-height-responsive h-100">
                                 <div class="project_detail_backface py-5" id="backface">
-                                    <div class="container-fluid gx-0 overflow-hidden pb-5">
+                                    <div class="container-fluid gx-0 overflow-hidden">
                                         <div class="row justify-content-between">
                                             <div class="col-lg-5 py-5 mt-4 pe-5">
                                                 <div class="title_detail_wrap">
@@ -439,7 +440,7 @@
                                         <div class="social_wrapper">
                                             <div class="social_wrapper_in">
 
-                                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
                                                     <li class="col-lg-3 nav-item">
                                                         <a href="#" class="nav-link active" id="pills-social1-tab"
                                                             data-bs-toggle="pill" data-bs-target="#pills-social1"
@@ -552,10 +553,11 @@
                                     <div class="container-fluid gx-0">
                                         <div class="row text-center align-items-center justify-content-center">
                                             <div class="col-12">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#detailVideo">
+                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                    data-bs-target="#detailVideo">
                                                     <img src="img/project_detail/drone_poster.png" alt="" class="w-100">
                                                 </a>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -568,28 +570,14 @@
                             <div class="section fp-auto-height-responsive h-100">
                                 <div class="project_detail_drone h-100" id="drone">
                                     <div class="container-fluid gx-0">
-                                        <div class="row align-items-center justify-content-center">
-                                            <div class="col-lg-4">
-                                                <div class="title_wrap">
-                                                    <h1 style="color: #525daa;">Online Katalog</h1>
-                                                    <span class="fs-5 fw-500">Şık mimarisi ve eşsiz doğası ile <strong>PaipurtCity</strong>  sizleri bekliyor.</span>
+                                        <div class="karl-viewer h-100">
+                                            <div class="karl-viewer-wrap h-100 position-relative">
+                                                <div class="karl-viewer-content text-center d-md-flex flex-column">
+                                                    <h2>Karl-Marx-Straße Kataolog</h2>
+                                                    <p class="d">Bodenmerkmale und Erklärungen</p>
                                                 </div>
-                                                <p>
-                                                    For over 50 years, our Industrial segment has earned recognition for transforming the ideas and visions of clients into reality by building and maintaining their operational.
-                                                </p>
-                                                <a href="#" class="btn mainBtn">Katalog İndir</a>
-                                            </div>
-                                            <div class="col-lg-7">
-                                                <div class="karl-viewer h-100">
-                                                    <div class="karl-viewer-wrap h-100 position-relative">
-                                                      <div class="karl-viewer-content text-center d-md-flex flex-column">
-                                                        <h2>Karl-Marx-Straße Kataolog</h2>
-                                                        <p class="d">Bodenmerkmale und Erklärungen</p>
-                                                      </div>
-                                                      <div id="pdf-book" class="karl-viewer-book">           
-                                                      </div>
-                                                    </div>
-                                                  </div> 
+                                                <div id="pdf-book" class="karl-viewer-book">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -597,21 +585,215 @@
                             </div>
                             <!-- End Catalog -->
 
+                            <!-- News 
+                            ================= -->
+                            <div class="section fp-auto-height-responsive h-100">
+                                <div class="project_detail_plain h-100" id="news">
+                                    <div class="container-fluid gx-0 h-100">
+                                        <div class="row justify-content-between">
+                                            <div class="col-lg-9 position-relative tab-content" id="v-pills-tabContent">
+                                                <div class="news_1 tab-pane fade show active" id="v-pills-news1"
+                                                    role="tabpanel">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-lg-12">
+                                                            <h1 class="mb-3 fw-bold" style="color: #525daa;">Proje
+                                                                Haberleri</h1>
+                                                            <img src="img/project_detail/project_detail_news.png"
+                                                                alt="">
+                                                            <div class="news_text_wrapper">
+                                                                Paipurth heyeti ve kocaeli belediye başkanı
+                                                                şantiyemizde incelemelerde bulundu
+                                                            </div>
+                                                            <div class="pt-5">
+                                                                <p>For over 50 years, our Industrial segment has earned
+                                                                    recognition for transforming the ideas and visions
+                                                                    of clients into reality by building and maintaining
+                                                                    their operational. Over 50 years, our Industrial
+                                                                    segment has earned recognition for transforming the
+                                                                    ideas and visions of clients into reality by
+                                                                    building and maintaining their operational.</p>
+                                                                <p>For over 50 years, our Industrial segment has earned
+                                                                    recognition for transforming the ideas and visions
+                                                                    of clients into reality by building and maintaining
+                                                                    their operational.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
+
+                                                </div>
+                                                <div class="news_2 tab-pane fade" id="v-pills-news2" role="tabpanel">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-lg-12">
+                                                            <h1 class="mb-3 fw-bold" style="color: #525daa;">Proje
+                                                                Haberleri</h1>
+                                                            <img src="img/project_detail/project_detail_news.png"
+                                                                alt="">
+                                                            <div class="news_text_wrapper">
+                                                                Paipurth heyeti ve kocaeli belediye başkanı
+                                                                şantiyemizde incelemelerde bulundu
+                                                            </div>
+                                                            <div class="pt-5">
+                                                                <p>For over 50 years, our Industrial segment has earned
+                                                                    recognition for transforming the ideas and visions
+                                                                    of clients into reality by building and maintaining
+                                                                    their operational. Over 50 years, our Industrial
+                                                                    segment has earned recognition for transforming the
+                                                                    ideas and visions of clients into reality by
+                                                                    building and maintaining their operational.</p>
+                                                                <p>For over 50 years, our Industrial segment has earned
+                                                                    recognition for transforming the ideas and visions
+                                                                    of clients into reality by building and maintaining
+                                                                    their operational.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-3 text-end">
+                                                <div class="plain_Nav">
+
+                                                    <ul class="nav nav-pills justify-content-end" id="v-pills-tab"
+                                                        role="tablist">
+                                                        <li class="nav-item pb-3" role="presentation">
+                                                            <a class="nav-link active" id="v-pills-news1-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#v-pills-news1"
+                                                                type="button" role="tab">
+                                                                <img src="img/project_detail/news_select1.png" alt=""
+                                                                    width="200" class="img-fluid">
+                                                                <span class="d-block pe-3 pt-3">2+1 Standart
+                                                                    Daire</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item pb-3" role="presentation">
+                                                            <a class="nav-link" id="v-pills-news2-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#v-pills-news2"
+                                                                type="button" role="tab">
+                                                                <img src="img/project_detail/news_select2.png" alt=""
+                                                                    width="200" class="img-fluid">
+                                                                <span class="d-block pe-3 pt-3">2+1 Standart
+                                                                    Daire</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link" id="v-pills-news3-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#v-pills-news3"
+                                                                type="button" role="tab">
+                                                                <img src="img/project_detail/news_select1.png" alt=""
+                                                                    width="200" class="img-fluid">
+                                                                <span class="d-block pe-3 pt-3">2+1 Standart
+                                                                    Daire</span>
+                                                            </a>
+                                                        </li>
+
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End News -->
+                            <!-- Footer
+                                ================== -->
+                            <div class="section fp-auto-height-responsive h-100" id="footers">
+                                <footer>
+                                    <div class="container-fluid h-100 gx-0">
+                                        
+                                        <div class="project_detail_footer">
+                                            <div class="container-fluid bg-white">
+                                                <div class="row pb-5 bg-white">
+                                                    <div class="col-lg-3">
+                                                        <h1 style="color: #525daa;">İletişim</h1>
+                                                        <ul class="pt-3">
+                                                            <li><a href="#">Kurfürstendamm 72 10709</a></li>
+                                                            <li><a href="#">Berlin Deutschland</a></li>
+                                                            <li><a href="tel:491787603917">Tel +491787603917</a>
+                                                            </li>
+                                                            <li><a
+                                                                    href="mailto:info@paipurth.com.tr">info@paipurth.com.tr</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <form action="" class="footerForm">
+                                                            <div class="row">
+                                                                <div class="col-lg-4">
+                                                                    <input class="form-control form-control-lg"
+                                                                        type="text" placeholder="Ad Soyad*"
+                                                                        required>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <input class="form-control form-control-lg"
+                                                                        type="email" placeholder="E-mail adres*"
+                                                                        required>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <input class="form-control form-control-lg"
+                                                                        type="tel" placeholder="Telefon Numaranız">
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="row align-items-end justify-content-between">
+                                                                <div class="col-lg-7">
+                                                                    <textarea class="form-control"
+                                                                        id="footerTextArea" rows="3"
+                                                                        placeholder="Açıklama"></textarea>
+                                                                </div>
+                                                                <div class="col-lg-4"><a href=""
+                                                                        class="btn mainBtn">Gönder</a></div>
+                                                            </div>
+                                                            <div class="form-check mt-4">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    value="" id="flexCheckChecked" checked>
+                                                                <label class="form-check-label"
+                                                                    for="flexCheckChecked">
+                                                                    Kampanya koşullarını kabul ediyorum.
+                                                                </label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="footer_bottom bg-dark py-4">
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center py-4 px-3">
+                                                        <div class="col">
+                                                            <img src="img/global/paipurth_logo_2.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                           
+                                       
+                                    </div>
+                                </footer>
+                            </div>
+
+                            <!-- End Footer  -->
                         </div>
                     </div>
                 </div>
             </div>
 
+        </div>
+
+
+
+
+
     </main>
 
     <div class="modal fade" id="detailVideo" tabindex="-1">
         <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen">
-          <div class="modal-content">
-              <video src="img/product-detail/950.mp4" style="max-width: 100%;" autoplay loop controls>
-          </div>
+            <div class="modal-content">
+                <video src="img/product-detail/950.mp4" style="max-width: 100%;" autoplay loop controls>
+            </div>
         </div>
-      </div>
+    </div>
 
     <div id="cursor"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
@@ -620,33 +802,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/flipbook.min.js"></script>
+    <script src="js/pdf/flipbook.min.js"></script>
     <script src="js/main.js"></script>
     <script>
         var myFullpage = new fullpage('.fullpage', {
             // anchors: ['hero', 'plain', 'suit', '3d', 'transport', 'drone', 'our'],
-            anchors: ['detailHero', 'detailPlain', 'detailBackFace', 'detail3D', 'detailTransport', 'detailSocial', 'detailDrone'],
+            anchors: ['detailHero', 'detailPlain', 'detailBackFace', 'detail3D', 'detailTransport',
+                'detailSocial', 'detailDrone', 'detailCatalog', 'detailNews'
+            ],
             menu: '#fp-menu',
             responsiveWidth: 1200,
             scrollHorizontally: true,
             dragAndMove: true,
         });
     </script>
-    <script>
-          jQuery(document).ready(function () {
-      jQuery("#pdf-book").flipBook({
-          pdfUrl:"pdf/12_dairelik_gorseller.pdf",
-          backgroundColor:"#fff"
-      });
-  })
 
-  $(document).ready(function () {
-    $("#pdf-book").one("mouseover", ".flipbook-bookLayer", function () {
-        setTimeout(() => {
-          $(".icon-play").click()
-        }, 1500);
-    })
-  })
+    <!-- PDF -->
+    <script>
+        jQuery(document).ready(function () {
+            jQuery("#pdf-book").flipBook({
+                pdfUrl: "pdf/12_dairelik.pdf",
+                backgroundColor: "#fff"
+            });
+        })
+
+        $(document).ready(function () {
+            $("#pdf-book").one("mouseover", ".flipbook-bookLayer", function () {
+                setTimeout(() => {
+                    $(".icon-play").click()
+                }, 1500);
+            })
+        })
     </script>
 </body>
 
