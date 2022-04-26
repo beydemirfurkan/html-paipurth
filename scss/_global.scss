@@ -7,6 +7,38 @@ $white : #fff;
 $orange : #ff8105;
 $purple : #7a81b9;
 $gray : #ededed;
+
+$maxWidt992  : "max-width:992px" ;
+$minWidt768  : "min-width:768px" ;
+$minWidt992  : "min-width:992px" ;
+$minWidt1200 : "min-width:1200px" ;
+$minWidt1366 : "min-width:1366px" ;
+$minWidt1500 : "min-width:1500px" ;
+$minWidt1600 : "min-width:1600px" ;
+$minWidt1900 : "min-width:1900px" ;
+
+@mixin responsive($val, $val2 : null){
+
+  @if ($val == 768) {
+    @media (min-width:768px){  @content  }
+  };
+
+  @if ($val == 992) {
+    @media (min-width:992px){  @content  }
+  };
+
+  @if ($val == 1200) {
+    @media (min-width:1200px){  @content  }
+  }; 
+
+  @if ($val == 1500) {
+    @media (min-width:1500px){  @content  }
+  }; 
+
+  @if ($val == 1900) {
+    @media (min-width:1900px){  @content  }
+  } 
+};
 * {
     font-family: 'Poppins', sans-serif;
     letter-spacing: .5px;

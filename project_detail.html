@@ -17,11 +17,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
         integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/flipbook.style.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header position-relative bg-white" style="z-index: 99999;">
         <div class="header_wrapper">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg navbar-light">
@@ -72,10 +73,11 @@
                 <ul id="fp-menu">
                     <li data-menuanchor="detailHero" class="active"><a href="#detailHero">Proje detayı</a></li>
                     <li data-menuanchor="detailPlain"><a href="#detailPlain">Daire planları</a></li>
-                    <li data-menuanchor="detailSuit"><a href="#detailSuit">Dış Cephe</a></li>
-                    <li data-menuanchor="detail3D"><a href="#detail3D">Daire planları</a></li>
-                    <li data-menuanchor="detailTransport"><a href="#detailTransport">Daire planları</a></li>
-                    <li data-menuanchor="detailDrone"><a href="#detailDrone">Daire planları</a></li>
+                    <li data-menuanchor="detailBackFace"><a href="#detailBackFace">Dış Cephe</a></li>
+                    <li data-menuanchor="detail3D"><a href="#detail3D">3D daire görüntüsü</a></li>
+                    <li data-menuanchor="detailTransport"><a href="#detailTransport">Çevre ve ulaşım</a></li>
+                    <li data-menuanchor="detailSocial"><a href="#detailSocial">Paipurth City Farkı</a></li>
+                    <li data-menuanchor="detailDrone"><a href="#detailDrone">Drone çekimi</a></li>
                     <li data-menuanchor="detailOur"><a href="#detailOur">Daire planları</a></li>
                 </ul>
             </div>
@@ -88,8 +90,8 @@
                         <div class="col-lg-9">
                             <!-- Hero
                             =================== -->
-                            <div class="fp-section fp-auto-height-responsive h-100 active overflow-hidden">
-                                <div class="project_detail_hero" id="hero">
+                            <div class="section fp-auto-height-responsive h-100 active overflow-hidden">
+                                <div class="project_detail_hero h-100" id="hero">
                                     <div class="container-fluid gx-0">
                                         <div class="row">
                                             <div class="col-12">
@@ -103,12 +105,13 @@
 
                             <!-- Plain 
                             ================= -->
-                            <div class="fp-section fp-auto-height-responsive h-100 overflow-hidden">
-                                <div class="project_detail_plain py-5" id="plain">
-                                    <div class="container-fluid gx-0 overflow-hidden">
+                            <div class="section fp-auto-height-responsive h-100">
+                                <div class="project_detail_plain h-100" id="plain">
+                                    <div class="container-fluid gx-0 h-100">
                                         <div class="row justify-content-between">
                                             <div class="col-lg-9 position-relative tab-content" id="v-pills-tabContent">
-                                                <div class="plains_1 tab-pane fade show active" id="v-pills-detail1" role="tabpanel">
+                                                <div class="plains_1 tab-pane fade show active" id="v-pills-detail1"
+                                                    role="tabpanel">
                                                     <div class="row justify-content-between align-items-center">
                                                         <div class="col-lg-4">
                                                             <div class="title_detail_wrap">
@@ -119,10 +122,12 @@
                                                                             class="plain_m2">234</span>m<sup>2</sup></strong>
                                                                 </div>
                                                             </div>
-                                                            <p class="plain_content">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                                                Ratione enim, distinctio id quia maxime assumenda cum animi
+                                                            <p class="plain_content">Lorem ipsum dolor sit amet
+                                                                consectetur, adipisicing elit.
+                                                                Ratione enim, distinctio id quia maxime assumenda cum
+                                                                animi
                                                                 non quam accusantium.</p>
-    
+
                                                         </div>
                                                         <div class="col-lg-8">
                                                             <img src="img/project_detail/plain_1.png" alt="">
@@ -164,7 +169,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="plains_2 tab-pane fade" id="v-pills-detail2" role="tabpanel">
+                                                <div class="plains_2 tab-pane fade" id="v-pills-detail2"
+                                                    role="tabpanel">
                                                     <div class="row justify-content-between align-items-center">
                                                         <div class="col-lg-4">
                                                             <div class="title_detail_wrap">
@@ -175,10 +181,12 @@
                                                                             class="plain_m2">234</span>m<sup>2</sup></strong>
                                                                 </div>
                                                             </div>
-                                                            <p class="plain_content">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                                                Ratione enim, distinctio id quia maxime assumenda cum animi
+                                                            <p class="plain_content">Lorem ipsum dolor sit amet
+                                                                consectetur, adipisicing elit.
+                                                                Ratione enim, distinctio id quia maxime assumenda cum
+                                                                animi
                                                                 non quam accusantium.</p>
-    
+
                                                         </div>
                                                         <div class="col-lg-8">
                                                             <img src="img/project_detail/plain_1.png" alt="">
@@ -225,23 +233,36 @@
                                             <div class="col-lg-3 text-end">
                                                 <div class="plain_Nav">
 
-                                                    <ul class="nav nav-pills justify-content-end" id="v-pills-tab" role="tablist">
+                                                    <ul class="nav nav-pills justify-content-end" id="v-pills-tab"
+                                                        role="tablist">
                                                         <li class="nav-item pb-3" role="presentation">
-                                                            <a class="nav-link active" id="v-pills-detail1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-detail1" type="button" role="tab">
-                                                                <img src="img/project_detail/f2.jpg" alt="" width="200" class="img-fluid">
-                                                                <span class="d-block pe-3 pt-3">2+1 Standart Daire</span>
+                                                            <a class="nav-link active" id="v-pills-detail1-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#v-pills-detail1"
+                                                                type="button" role="tab">
+                                                                <img src="img/project_detail/f2.jpg" alt="" width="200"
+                                                                    class="img-fluid">
+                                                                <span class="d-block pe-3 pt-3">2+1 Standart
+                                                                    Daire</span>
                                                             </a>
                                                         </li>
                                                         <li class="nav-item pb-3" role="presentation">
-                                                            <a class="nav-link" id="v-pills-detail1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-detail1" type="button" role="tab">
-                                                                <img src="img/project_detail/f3.jpg" alt="" width="200" class="img-fluid">
-                                                                <span class="d-block pe-3 pt-3">2+1 Standart Daire</span>
+                                                            <a class="nav-link" id="v-pills-detail1-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#v-pills-detail1"
+                                                                type="button" role="tab">
+                                                                <img src="img/project_detail/f3.jpg" alt="" width="200"
+                                                                    class="img-fluid">
+                                                                <span class="d-block pe-3 pt-3">2+1 Standart
+                                                                    Daire</span>
                                                             </a>
                                                         </li>
                                                         <li class="nav-item" role="presentation">
-                                                            <a class="nav-link" id="v-pills-detail1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-detail1" type="button" role="tab">
-                                                                <img src="img/project_detail/f4.jpg" alt="" width="200" class="img-fluid">
-                                                                <span class="d-block pe-3 pt-3">2+1 Standart Daire</span>
+                                                            <a class="nav-link" id="v-pills-detail1-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#v-pills-detail1"
+                                                                type="button" role="tab">
+                                                                <img src="img/project_detail/f4.jpg" alt="" width="200"
+                                                                    class="img-fluid">
+                                                                <span class="d-block pe-3 pt-3">2+1 Standart
+                                                                    Daire</span>
                                                             </a>
                                                         </li>
 
@@ -258,20 +279,339 @@
 
                             <!-- Back Face
                             =============== -->
-                            <div class="fp-section fp-auto-height-responsive h-100 overflow-hidden">
-                                <div class="project_detail_backface" id="backface">
-                                    <div class="container-fluid gx-0 overflow-hidden"></div>
+                            <div class="section fp-auto-height-responsive h-100">
+                                <div class="project_detail_backface py-5" id="backface">
+                                    <div class="container-fluid gx-0 overflow-hidden pb-5">
+                                        <div class="row justify-content-between">
+                                            <div class="col-lg-5 py-5 mt-4 pe-5">
+                                                <div class="title_detail_wrap">
+                                                    <h1 class="plain_name pb-3">Dış Cephe</h1>
+                                                    <span class="plain_type">Etkileyici Mimari Doku</span>
+                                                </div>
+                                                <p class="pt-3">
+                                                    For over 50 years, our Industrial segment has earned recognition for
+                                                    transforming the ideas and visions of clients into reality by
+                                                    building and maintaining their operational.
+                                                </p>
+                                                <p>
+                                                    For over 50 years, our Industrial segment has earned recognition for
+                                                    transforming the ideas and visions of clients into reality by
+                                                    building and maintaining their operational.
+                                                </p>
+                                                <div class="navigation-wrap d-flex position-absolute"
+                                                    style="left: 30%; bottom: 30%;">
+                                                    <div
+                                                        class="text-uppercase text-white text-center position-relative d-flex flex-column h-100 justify-content-center align-items-center backNav">
+                                                        <h5 class="fs-1">Dış</h5>
+                                                        <span class="d-block">Görseller</span>
+                                                        <span class="position-absolute bottom-0 mb-3 backNavCheck"><i
+                                                                class="bi bi-check-lg"></i></span>
+                                                    </div>
+                                                    <div
+                                                        class="text-uppercase text-white text-center inNav position-relative d-flex flex-column h-100 justify-content-center align-items-center inNav">
+                                                        <h5 class="fs-1">Ic</h5>
+                                                        <span class="d-block">Görseller</span>
+                                                        <span class="position-absolute bottom-0 mb-3 inNavCheck"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7">
+                                                <div class="swiper backfaceSwiper">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide backImg"><img
+                                                                src="img/project_detail/backface_slide1.png" alt="">
+                                                        </div>
+                                                        <div class="swiper-slide backImg"><img
+                                                                src="img/project_detail/backface_slide1.png" alt="">
+                                                        </div>
+                                                        <div class="swiper-slide backImg"><img
+                                                                src="img/project_detail/backface_slide1.png" alt="">
+                                                        </div>
+                                                        <div class="swiper-slide inImg"><img
+                                                                src="img/project_detail/f2.jpg" alt=""></div>
+                                                        <div class="swiper-slide inImg"><img
+                                                                src="img/project_detail/f3.jpg" alt=""></div>
+                                                        <div class="swiper-slide inImg"><img
+                                                                src="img/project_detail/f4.jpg" alt=""></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <!-- End Back Face -->
+
+                            <!-- 3D
+                            =================== -->
+                            <div class="section fp-auto-height-responsive h-100">
+                                <div class="project_detail_3d h-100" id="3d">
+                                    <div class="container-fluid gx-0">
+                                        <div class="title_wrap text-center">
+                                            <h1 style="color: #525daa;">3D Daire Görünümü</h1>
+                                            <span class="fs-3 fw-500">William Hare was formally incorporated</span>
+                                        </div>
+                                        <div class="row pb-5 text-center">
+                                            <div class="col-12">
+                                                <img src="img/project_detail/shutterstock_797259067.png" alt="">
+                                                <div class="py-4">
+                                                    <a href="#"
+                                                        class="btn btn-outline-dark px-3 py-2 rounded-pill border-1">Projeni
+                                                        Kaydet</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End 3D -->
+
+                            <!-- Transport
+                            =================== -->
+                            <div class="section fp-auto-height-responsive h-100">
+                                <div class="project_detail_transport" id="transport"
+                                    style="background-image: url(./img/project_detail/project_detail_maps.png); background-size: auto; min-height: 100vh;">
+                                    <div class="container-fluid gx-0">
+                                        <div class="row justify-content-between align-items-start">
+                                            <div class="col-lg-4 pb-0">
+                                                <div class="title_wrap">
+                                                    <h1 style="color: #525daa;">Çevre ve Ulaşım</h1>
+                                                    <span class="fs-5 fw-500">Paipurt City size kolay ulaşım ve bolca
+                                                        çevresel faktörler sunar</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7">
+                                                <div class="transport_wrapper position-relative">
+                                                    <div
+                                                        class="transport_wrapper_in row justify-content-between align-items-center">
+                                                        <div class="col-lg-2 icon_item">
+                                                            <span>Hastane</span>
+                                                            <img src="img/project_detail/plain_transport_icon1.png"
+                                                                alt="">
+                                                            <span>34m<sup>2</sup></span>
+                                                        </div>
+                                                        <div class="col-lg-2 icon_item">
+                                                            <span>AVM</span>
+                                                            <img src="img/project_detail/plain_transport_icon2.png"
+                                                                alt="">
+                                                            <span>34m<sup>2</sup></span>
+                                                        </div>
+                                                        <div class="col-lg-2 icon_item">
+                                                            <span>Super Market</span>
+                                                            <img src="img/project_detail/plain_transport_icon3.png"
+                                                                alt="">
+                                                            <span>34m<sup>2</sup></span>
+                                                        </div>
+                                                        <div class="col-lg-2 icon_item">
+                                                            <span>Otobüs DRK.</span>
+                                                            <img src="img/project_detail/plain_transport_icon4.png"
+                                                                alt="">
+                                                            <span>34m<sup>2</sup></span>
+                                                        </div>
+                                                        <div class="col-lg-2 icon_item">
+                                                            <span>Metro</span>
+                                                            <img src="img/project_detail/plain_transport_icon5.png"
+                                                                alt="">
+                                                            <span>34m<sup>2</sup></span>
+                                                        </div>
+                                                        <div class="col-lg-2 icon_item">
+                                                            <span>Park Alanı</span>
+                                                            <img src="img/project_detail/plain_transport_icon6.png"
+                                                                alt="">
+                                                            <span>34m<sup>2</sup></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Transport -->
+
+
+                            <!-- Social 
+                            =============== -->
+                            <div class="section fp-auto-height-responsive h-100">
+                                <div class="project_detail_transport" id="social">
+                                    <div class="container-fluid gx-0">
+                                        <div class="social_wrapper">
+                                            <div class="social_wrapper_in">
+
+                                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                                    <li class="col-lg-3 nav-item">
+                                                        <a href="#" class="nav-link active" id="pills-social1-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#pills-social1"
+                                                            role="tab">
+                                                            <h3>Mimari <span>Dokunuslar</span></h3>
+                                                        </a>
+                                                    </li>
+                                                    <li class="col-lg-3 nav-item">
+                                                        <a href="#" class="nav-link" id="pills-social2-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#pills-social2"
+                                                            role="tab">
+                                                            <h3>Mimari <span>Dokunuslar</span></h3>
+                                                        </a>
+                                                    </li>
+                                                    <li class="col-lg-3 nav-item">
+                                                        <a href="#" class="nav-link" id="pills-social3-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#pills-social3"
+                                                            role="tab">
+                                                            <h3>Mimari <span>Dokunuslar</span></h3>
+                                                        </a>
+                                                    </li>
+                                                    <li class="col-lg-3 nav-item">
+                                                        <a href="#" class="nav-link" id="pills-social4-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#pills-social4"
+                                                            role="tab">
+                                                            <h3>Mimari <span>Dokunuslar</span></h3>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-content">
+                                            <div class="tab-pane show fade active" id="pills-social1" role="tabpanel">
+                                                <div class="row justify-content-between align-items-start">
+                                                    <div class="col-lg-4 pt-5 mt-5">
+
+                                                        <div class="title_wrap">
+                                                            <h1 style="color: #525daa;">Çevre ve Ulaşım</h1>
+                                                            <span class="fs-5 fw-500">Paipurt City size kolay ulaşım ve
+                                                                bolca
+                                                                çevresel faktörler sunar</span>
+                                                        </div>
+                                                        <p>For over 50 years, our Industrial segment has earned
+                                                            recognition for transforming the ideas and visions of
+                                                            clients into reality by building and maintaining their
+                                                            operational.</p>
+                                                        <p>For over 50 years, our Industrial segment has earned
+                                                            recognition for transforming the ideas and visions of
+                                                            clients into reality by building and maintaining their
+                                                            operational.</p>
+                                                        <p>For over 50 years, our Industrial segment has earned
+                                                            recognition for transforming the ideas and visions of
+                                                            clients into reality by building and maintaining their
+                                                            operational.</p>
+
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <img src="img/project_detail/plain_social_hero.png" alt="">
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="tab-pane fade" id="pills-social2" role="tabpanel">
+                                                <div class="row justify-content-between align-items-start">
+                                                    <div class="col-lg-4 pt-5 mt-5">
+
+                                                        <div class="title_wrap">
+                                                            <h1 style="color: #525daa;">Çevre ve Ulaşım</h1>
+                                                            <span class="fs-5 fw-500">Paipurt City size kolay ulaşım ve
+                                                                bolca
+                                                                çevresel faktörler sunar</span>
+                                                        </div>
+                                                        <p>For over 50 years, our Industrial segment has earned
+                                                            recognition for transforming the ideas and visions of
+                                                            clients into reality by building and maintaining their
+                                                            operational.</p>
+                                                        <p>For over 50 years, our Industrial segment has earned
+                                                            recognition for transforming the ideas and visions of
+                                                            clients into reality by building and maintaining their
+                                                            operational.</p>
+                                                        <p>For over 50 years, our Industrial segment has earned
+                                                            recognition for transforming the ideas and visions of
+                                                            clients into reality by building and maintaining their
+                                                            operational.</p>
+
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <img src="img/project_detail/plain_social_hero.png" alt="">
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Social -->
+
+                            </div>
+
+
+                            <!-- Drone
+                            =================== -->
+                            <div class="section fp-auto-height-responsive h-100">
+                                <div class="project_detail_drone h-100" id="drone">
+                                    <div class="container-fluid gx-0">
+                                        <div class="row text-center align-items-center justify-content-center">
+                                            <div class="col-12">
+                                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#detailVideo">
+                                                    <img src="img/project_detail/drone_poster.png" alt="" class="w-100">
+                                                </a>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Drone -->
+
+                            <!-- Catalog
+                            =================== -->
+                            <div class="section fp-auto-height-responsive h-100">
+                                <div class="project_detail_drone h-100" id="drone">
+                                    <div class="container-fluid gx-0">
+                                        <div class="row align-items-center justify-content-center">
+                                            <div class="col-lg-4">
+                                                <div class="title_wrap">
+                                                    <h1 style="color: #525daa;">Online Katalog</h1>
+                                                    <span class="fs-5 fw-500">Şık mimarisi ve eşsiz doğası ile <strong>PaipurtCity</strong>  sizleri bekliyor.</span>
+                                                </div>
+                                                <p>
+                                                    For over 50 years, our Industrial segment has earned recognition for transforming the ideas and visions of clients into reality by building and maintaining their operational.
+                                                </p>
+                                                <a href="#" class="btn mainBtn">Katalog İndir</a>
+                                            </div>
+                                            <div class="col-lg-7">
+                                                <div class="karl-viewer h-100">
+                                                    <div class="karl-viewer-wrap h-100 position-relative">
+                                                      <div class="karl-viewer-content text-center d-md-flex flex-column">
+                                                        <h2>Karl-Marx-Straße Kataolog</h2>
+                                                        <p class="d">Bodenmerkmale und Erklärungen</p>
+                                                      </div>
+                                                      <div id="pdf-book" class="karl-viewer-book">           
+                                                      </div>
+                                                    </div>
+                                                  </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Catalog -->
+
+
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
     </main>
 
+    <div class="modal fade" id="detailVideo" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen">
+          <div class="modal-content">
+              <video src="img/product-detail/950.mp4" style="max-width: 100%;" autoplay loop controls>
+          </div>
+        </div>
+      </div>
 
     <div id="cursor"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
@@ -280,26 +620,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
+    <script src="js/flipbook.min.js"></script>
     <script src="js/main.js"></script>
     <script>
         var myFullpage = new fullpage('.fullpage', {
             // anchors: ['hero', 'plain', 'suit', '3d', 'transport', 'drone', 'our'],
-            anchors: ['detailHero', 'detailPlain', 'detailBackFace'],
+            anchors: ['detailHero', 'detailPlain', 'detailBackFace', 'detail3D', 'detailTransport', 'detailSocial', 'detailDrone'],
             menu: '#fp-menu',
-            responsiveWidth: 992,
-            autoScrolling: true,
+            responsiveWidth: 1200,
             scrollHorizontally: true,
-            //   continuousVertical: true,
-            afterLoad: function (anchorLink, index) {
-                console.log("AFTER LOAD - anchorLink:" + anchorLink + " index:" + index);
-            },
-            onLeave: function (index, nextIndex, direction) {
-                console.log("ONLEAVE - index:" + index + " nextIndex:" + nextIndex + " direction:" +
-                    direction);
-
-            },
+            dragAndMove: true,
         });
+    </script>
+    <script>
+          jQuery(document).ready(function () {
+      jQuery("#pdf-book").flipBook({
+          pdfUrl:"pdf/12_dairelik_gorseller.pdf",
+          backgroundColor:"#fff"
+      });
+  })
+
+  $(document).ready(function () {
+    $("#pdf-book").one("mouseover", ".flipbook-bookLayer", function () {
+        setTimeout(() => {
+          $(".icon-play").click()
+        }, 1500);
+    })
+  })
     </script>
 </body>
 
