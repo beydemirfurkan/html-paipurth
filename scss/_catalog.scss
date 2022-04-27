@@ -1,43 +1,23 @@
 @use 'global' as g;
 @use 'mixin' as m;
+@use 'veriables' as v;
 
 
-
-  //karl viewer
-  ///////////////////////////////////////
-  .karl-viewer{
-
-    &-wrap{
-        padding: 50px 0px;
+  .catalog_wrapper {
+    height: 500px;
+    overflow-y: scroll;
+    .btn-download {
+        background: v.$darkPurple;
+        color: v.$white;
+        width: 200px;
+        padding: 10px;
+        border: 1px solid v.$darkPurple;
+        i {
+            padding-left: 20px;
+        }
+        &:hover, &:focus {
+            background: #232538;
+            color: v.$white;
+        }
     }
-
-    &-book{
-     position: relative;
-     min-height: 225px;
-
-     @include g.responsive(768){
-       min-height: 650px;
-     }
-
-     @include g.responsive(1200){
-       position: static;
-     }
-    }
-    
-
-    @include g.responsive(1200){     
-      &-content{
-        position: absolute;
-        right: 0;
-        z-index: 987554;
-        top: 100px;
-        width: calc(100% - 100px);
-      }
-      
-      .flipbook-main-wrapper{
-        top: 190px;
-      }
-    }
-
-  }
-  
+}

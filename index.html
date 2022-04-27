@@ -8,7 +8,9 @@
     <title>Paipurth</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
@@ -16,97 +18,119 @@
 </head>
 
 <body>
-    <header class="header">
+    <!-- Header
+        ===========================
+     -->
+    <header class="header fixed-top">
         <div class="header_wrapper">
             <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg navbar-light">
+                <nav class="navbar navbar-expand-xl navbar-light">
                     <div class="container-fluid g-0">
-                      <button class="navbar-toggler border-0 text-white ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
-                        <span class="bi bi-list fs-1 border-0"></span>
-                      </button>
-                      <div class="collapse navbar-collapse justify-content-center align-items-center position-relative" id="navbarNavAltMarkup">
-                        <div class="navbar-nav position-relative text-center text-lg-start">
-                          <a class="nav-link active ms-lg-5" href="project.html">Projeler</a>
-                          <a class="nav-link ms-lg-5" href="about.html">Hakkımızda</a>
-                          <a class="nav-link ms-lg-5" href="index.html"><img src="img/global/paipurth_logo.png" alt="" width="65" style="margin-top: -20px;"></a>
-                          <a class="nav-link ms-lg-5" href="catalog.html">Kataloglar</a>
-                          <a class="nav-link ms-lg-5" href="contact.html">İletişim</a>
+                        <button class="navbar-toggler border-0 text-white ms-auto" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                            <span class="bi bi-list fs-1 border-0"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center align-items-center position-relative"
+                            id="navbarNavAltMarkup">
+                            <div class="navbar-nav position-relative text-center text-lg-start">
+                                <a class="nav-link active ms-lg-5" href="project.html">Projeler</a>
+                                <a class="nav-link ms-lg-5" href="about.html">Hakkımızda</a>
+                                <a class="nav-link ms-lg-5" href="index.html"><img src="img/global/paipurth_logo.png"
+                                        alt="" width="65" style="margin-top: -20px;"></a>
+                                <a class="nav-link ms-lg-5" href="catalog.html">Kataloglar</a>
+                                <a class="nav-link ms-lg-5" href="contact.html">İletişim</a>
+                            </div>
                         </div>
-                      </div>
-                      <div class="div position-absolute end-0 top-0">
-                          <div class="language position-relative d-flex align-items-center">
-                            <div class="dropdown text-center">
-                                <a class="dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                                  TR
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                  <li><a class="dropdown-item">TR</a></li>
-                                  <li><a class="dropdown-item">AR</a></li>
-                                  <li><a class="dropdown-item">EN</a></li>
-                                </ul>
-                              </div>
-                              <a href="#" class="btn contact_header_btn ms-4">Bize Yaz</a>
-                          </div>
-                         
-                      </div>
+                        <div class="div position-absolute end-0 top-0">
+                            <div class="language position-relative d-flex align-items-center">
+                                <div class="dropdown text-center">
+                                    <a class="dropdown-toggle" type="button" id="dropdownMenu2"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        TR
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <li><a class="dropdown-item">TR</a></li>
+                                        <li><a class="dropdown-item">AR</a></li>
+                                        <li><a class="dropdown-item">EN</a></li>
+                                    </ul>
+                                </div>
+                                <a class="btn contact_header_btn ms-4" data-bs-toggle="offcanvas" href="#contactUs"
+                                    role="button">Bize Yaz</a>
+                            </div>
+
+                        </div>
                     </div>
-                  </nav>
-            </div>         
+                </nav>
+            </div>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero_wrapper ps-5 position-relative">
-            <div class="container-fluid">
+    <!-- END Header -->
+
+    <!-- Hero
+    ===========================
+    -->
+    <section class="hero mt-xl-5 pt-xl-5">
+        <div class="hero_wrapper ps-xl-5 text-center text-xl-start position-relative pt-xl-4">
+            <div class="container-fluid gx-0 overflow-hidden">
                 <div class="row justify-content-between align-items-center">
-                    <div class="col-xl-3">
-                        <div class="hero_title">
+                    <div class="col-xl-3 pb-4 pb-xl-0 order-2 order-xl-1 heroContent">
+                        <div class="hero_title text-center text-xl-start">
                             <span class="m-0 p-0"><i class="bi bi-geo-alt me-2"></i>Kocaeli</span>
-                            <h1 class="fw-bold pt-4">Huzurun <span class="d-block display-3 fw-500 m-0 p-0">Adresi</span></h1>
-                            <div class="bg-light fw-500 fs-5 py-2 px-4 text-capitalize">Paipurth City</div>
-                            <p class="pt-3">Asseto Gmbh ve Asseto Baum Gmbh firmaları olarak inşaat projeleri, restorasyon projeleri ve </p>
+                            <h1 class="fw-bold pt-4 display-1">Huzurun <span
+                                    class="d-block display-3 fw-500 m-0 p-0">Adresi</span></h1>
+                            <div class="bg-light fw-500 fs-5 py-2 px-4 text-capitalize m-auto m-xl-0 paiCity">Paipurth City
+                            </div>
+                            <p class="pt-3 text-center">Asseto Gmbh ve Asseto Baum Gmbh firmaları olarak inşaat projeleri,
+                                restorasyon projeleri ve </p>
                         </div>
-                        <a href="#" class="btn mainBtn mt-3"><span>Projeyi Gör</span></a>
-                        <a href="#about" class="arrow_down"><img src="img/global/paipurth_arrow_down.png" alt="" class="d-block"></a>
+                        <a href="#" class="btn mainBtn mt-3 mb-5" style="z-index: 99;"><span>Projeyi Gör</span></a>
+                        <a href="#about" class="arrow_down"><img src="img/global/paipurth_arrow_down.png" alt=""
+                                class="d-block"></a>
                     </div>
-                    <div class="col-xl-8">
+                    <div class="col-xl-8 order-1 order-xl-2">
                         <div class="swiper swiper_hero_top">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="img/home/paipurth_slide1.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="img/home/paipurth_slide2.jpg" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="img/home/paipurth_slide3.jpg" />
-                          </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                      </div>
-                      <div class="swiper_hero_bottom_wrapper">
-                        <div thumbsSlider="" class="swiper swiper_hero_bottom">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <img src="img/home/paipurth_slide1.jpg" />
-                                  </div>
-                                  <div class="swiper-slide">
+                                </div>
+                                <div class="swiper-slide">
                                     <img src="img/home/paipurth_slide2.jpg" />
-                                  </div>
-                                  <div class="swiper-slide">
+                                </div>
+                                <div class="swiper-slide">
                                     <img src="img/home/paipurth_slide3.jpg" />
-                                  </div>
+                                </div>
                             </div>
-                          </div>
-                      </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="swiper_hero_bottom_wrapper">
+                            <div thumbsSlider="" class="swiper swiper_hero_bottom">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/home/paipurth_slide1.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/home/paipurth_slide2.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/home/paipurth_slide3.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
             </div>
         </div>
     </section>
-   
-    <section class="about" id="about">
+    <!-- END Hero -->
+
+
+    <!-- About
+    ===========================
+    -->
+    <section class="about py-5 py-xl-0 px-3 px-xl-0" id="about">
         <div class="wrapper">
             <div class="container-fluid">
                 <div class="row justify-content-between align-items-center">
@@ -115,88 +139,103 @@
                             <h1>Hakkımızda Kısaca</h1>
                             <span>Sağlamlık ve estetikliğin karışımı</span>
                         </div>
-                        <p>Yüksek mukavemetli beton köprülerde, yüksek katlı yapılarda tercih edilen C50 sınıfındaki betonu Paipurth olarak Temel beton dayanımı ve su yalıtımı için bütün dairelerimizde kullandı.</p>
-                        <p>Panjurlu doğramalarla yaşamın her alanında, enerji tasarrufunun bir numaralı aracısı olan doğrama sistemleri kaliteli bir yapı ortaya çıkartıldı. Güzel bir estetik, uzun ömürlü yapılar oluşmasıyla birlikte mahremiyet ve güvenliği sizler için buluşturuldu.Yüksek mukav
-                            Yüksek mukavemetli beton köprülerde, yüksek katlı yapılarda tercih edilen C50 sınıfındaki betonu Paipurth olarak Temel beton dayanımı ve su yalıtımı için bütün dairelerimizde kullandı.
-                            Panjurlu doğramalarla yaşamın her alanında, enerji tasarrufunun bir numaralı aracısı olan doğrama sistemleri kaliteli bir yapı ortaya çıkartıldYüksek mukavemetli beton köprülerde, </p>
-                            <div class="about_mini_info_bottom">
-                                <div class="row justify-content-between">
-                                    <div class="col-lg-4">
-                                        <div class="d-md-flex align-items-center">
-                                            <div>
-                                                <img src="img/home/about_sec_mini1.png" alt="">
-                                            </div>                
-                                            <div class="about_mini_info_bottom_detail">
-                                                <h4>7294m<sup>2</sup></h4>
-                                                <span>Yaşam Alanı</span>
-                                            </div> 
-                                        </div>                       
-                                      
+                        <p>Yüksek mukavemetli beton köprülerde, yüksek katlı yapılarda tercih edilen C50 sınıfındaki
+                            betonu Paipurth olarak Temel beton dayanımı ve su yalıtımı için bütün dairelerimizde
+                            kullandı.</p>
+                        <p>Panjurlu doğramalarla yaşamın her alanında, enerji tasarrufunun bir numaralı aracısı olan
+                            doğrama sistemleri kaliteli bir yapı ortaya çıkartıldı. Güzel bir estetik, uzun ömürlü
+                            yapılar oluşmasıyla birlikte mahremiyet ve güvenliği sizler için buluşturuldu.Yüksek mukav
+                            Yüksek mukavemetli beton köprülerde, yüksek katlı yapılarda tercih edilen C50 sınıfındaki
+                            betonu Paipurth olarak Temel beton dayanımı ve su yalıtımı için bütün dairelerimizde
+                            kullandı.
+                            Panjurlu doğramalarla yaşamın her alanında, enerji tasarrufunun bir numaralı aracısı olan
+                            doğrama sistemleri kaliteli bir yapı ortaya çıkartıldYüksek mukavemetli beton köprülerde,
+                        </p>
+                        <div class="about_mini_info_bottom">
+                            <div
+                                class="row justify-content-center justify-content-md-between text-center text-md-start">
+                                <div class="col-6 col-sm-4 py-3 py-md-0">
+                                    <div class="d-md-flex align-items-center">
+                                        <div>
+                                            <img src="img/home/about_sec_mini1.png" alt="">
+                                        </div>
+                                        <div class="about_mini_info_bottom_detail">
+                                            <h4>7294m<sup>2</sup></h4>
+                                            <span>Yaşam Alanı</span>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-4">
-                                        <div class="d-md-flex align-items-center">
-                                            <div>
-                                                <img src="img/home/about_sec_mini2.png" alt="">
-                                            </div>                
-                                            <div class="about_mini_info_bottom_detail">
-                                                <h4>8114m<sup>2</sup></h4>
-                                                <span>Yaşam Alanı</span>
-                                            </div> 
-                                        </div>                       
-                                      
+
+                                </div>
+                                <div class="col-6 col-sm-4 py-3 py-md-0">
+                                    <div class="d-md-flex align-items-center">
+                                        <div>
+                                            <img src="img/home/about_sec_mini2.png" alt="">
+                                        </div>
+                                        <div class="about_mini_info_bottom_detail">
+                                            <h4>8114m<sup>2</sup></h4>
+                                            <span>Yaşam Alanı</span>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-4">
-                                        <div class="d-md-flex align-items-center">
-                                            <div>
-                                                <img src="img/home/about_sec_mini3.png" alt="">
-                                            </div>                
-                                            <div class="about_mini_info_bottom_detail">
-                                                <h4>2743m<sup>2</sup></h4>
-                                                <span>Yaşam Alanı</span>
-                                            </div> 
-                                        </div>                       
-                                      
+
+                                </div>
+                                <div class="col-sm-4 py-3 py-md-0">
+                                    <div class="d-md-flex align-items-center">
+                                        <div>
+                                            <img src="img/home/about_sec_mini3.png" alt="">
+                                        </div>
+                                        <div class="about_mini_info_bottom_detail">
+                                            <h4>2743m<sup>2</sup></h4>
+                                            <span>Yaşam Alanı</span>
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
+                        </div>
 
                     </div>
                     <div class="col-lg-5">
                         <div class="row">
-                            <div class="col-lg-4 about_features">
+                            <div class="col-6 col-md-4 about_features">
                                 <div class="about_features_inner text-center">
                                     <img src="img/home/paipurth_icon1.1.svg" alt="">
-                                    <p class="fw-bold pt-2">Nefes Alan <br> <span class="fw-normal">Dış Cephe</span> </p>
+                                    <p class="fw-bold pt-2">Nefes Alan <br> <span class="fw-normal">Dış Cephe</span>
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 about_features">
+                            <div class="col-6 col-md-4 about_features">
                                 <div class="about_features_inner text-center">
                                     <img src="img/home/paipurth_icon2.1.svg" alt="">
-                                    <p class="fw-bold pt-2">Nefes Alan <br> <span class="fw-normal">Dış Cephe</span> </p>
+                                    <p class="fw-bold pt-2">Nefes Alan <br> <span class="fw-normal">Dış Cephe</span>
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 about_features">
+                            <div class="col-6 col-md-4 about_features">
                                 <div class="about_features_inner text-center">
                                     <img src="img/home/paipurth_icon3.1.svg" alt="">
-                                    <p class="fw-bold pt-2">Nefes Alan <br> <span class="fw-normal">Dış Cephe</span> </p>
+                                    <p class="fw-bold pt-2">Nefes Alan <br> <span class="fw-normal">Dış Cephe</span>
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 about_features">
+                            <div class="col-6 col-md-4 about_features">
                                 <div class="about_features_inner text-center">
                                     <img src="img/home/paipurth_icon4.1.svg" alt="">
-                                    <p class="fw-bold pt-2">Nefes Alan <br> <span class="fw-normal">Dış Cephe</span> </p>
+                                    <p class="fw-bold pt-2">Nefes Alan <br> <span class="fw-normal">Dış Cephe</span>
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 about_features">
+                            <div class="col-6 col-md-4 about_features">
                                 <div class="about_features_inner text-center">
                                     <img src="img/home/paipurth_icon5.1.svg" alt="">
-                                    <p class="fw-bold pt-2">Nefes Alan <br> <span class="fw-normal">Dış Cephe</span> </p>
+                                    <p class="fw-bold pt-2">Nefes Alan <br> <span class="fw-normal">Dış Cephe</span>
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 about_features">
+                            <div class="col-6 col-md-4 about_features">
                                 <div class="about_features_inner text-center">
                                     <img src="img/home/paipurth_icon2.1.svg" alt="">
-                                    <p class="fw-bold pt-2">Nefes Alan <br> <span class="fw-normal">Dış Cephe</span> </p>
+                                    <p class="fw-bold pt-2">Nefes Alan <br> <span class="fw-normal">Dış Cephe</span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -205,30 +244,43 @@
             </div>
         </div>
     </section>
+    <!-- END About -->
 
-
-    <section class="middle">
-        
+    <!-- Middle 
+    ===========================
+    -->
+    <section class="middle" data-bs-toggle="modal" data-bs-target="#middlePopup">
+        <a href=""></a>
     </section>
+    <!-- END Middle -->
 
-    <section class="founder_message">
+    <!-- Founder Message 
+    ===========================
+    -->
+    <section class="founder_message py-5 py-xl-0 px-3 px-xl-0">
         <div class="wrapper pt-5">
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-between">
-                    <div class="col-lg-4">
+                    <div class="col-xl-5 col-xxl-4">
                         <div class="title_wrap">
                             <h1>KURUCU MESAJI</h1>
                             <span>Huzurun ve doğanın içinde bir hayat</span>
                         </div>
-                        <p>Yüksek mukavemetli beton köprülerde, yüksek katlı yapılarda tercih edilen C50 sınıfındaki betonu Paipurth olarak Temel beton dayanımı ve su yalıtımı için bütün dairelerimizde kullandı.</p>
-                        <p>Panjurlu doğramalarla yaşamın her alanında, enerji tasarrufunun bir numaralı aracısı olan </p>
+                        <p>Yüksek mukavemetli beton köprülerde, yüksek katlı yapılarda tercih edilen C50 sınıfındaki
+                            betonu Paipurth olarak Temel beton dayanımı ve su yalıtımı için bütün dairelerimizde
+                            kullandı.</p>
+                        <p>Panjurlu doğramalarla yaşamın her alanında, enerji tasarrufunun bir numaralı aracısı olan
+                        </p>
                         <ul>
-                            <li class="fs-09"><i class="bi bi-check-lg me-3 fs-4"></i>Doğrama sistemleri kaliteli bir yapı ortaya çıkartıldı.</li>
-                            <li class="fs-09"><i class="bi bi-check-lg me-3 fs-4"></i>Güzel bir estetik, uzun ömürlü yapılar oluşmasıyla birlikte</li>
-                            <li class="fs-09"><i class="bi bi-check-lg me-3 fs-4"></i>Mahremiyet ve güvenliği sizler için buluşturuldu.</li>
+                            <li class="fs-09"><i class="bi bi-check-lg me-3 fs-4"></i>Doğrama sistemleri kaliteli bir
+                                yapı ortaya çıkartıldı.</li>
+                            <li class="fs-09"><i class="bi bi-check-lg me-3 fs-4"></i>Güzel bir estetik, uzun ömürlü
+                                yapılar oluşmasıyla birlikte</li>
+                            <li class="fs-09"><i class="bi bi-check-lg me-3 fs-4"></i>Mahremiyet ve güvenliği sizler
+                                için buluşturuldu.</li>
                         </ul>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-xl-6">
                         <img src="img/home/founder_cetin_yasaroglu.png" alt="">
                     </div>
                 </div>
@@ -236,201 +288,247 @@
 
         </div>
     </section>
+    <!-- END Founder Message -->
 
+    <!-- Villa Slider 
+    ===========================
+    -->
     <section class="villa_slider overflow-hidden">
         <div class="wrappers">
-            <div class="position-relative">
-                <img src="img/home/villa_map.png" alt="">
-                <div class="villa_text_content shadow-lg">
-                    <div class="villa_text_content_inner">
-                        <div class="top-img text-center">
-                            <img src="img/home/villa_text_2.png" alt="">
-                        </div>
-                        <div class="content_text p-4">
-                            <strong>Genel Tanım</strong>
-                            <p>For over 50 years, our Industrial segment has earned recognition for transforming the ideas and visions of clients into reality by building and maintaining their</p>
-                            <p>For over 50 years, our Industrial segment has earned recognition for transforming the ideas as of clients</p>
-                            <div class="row justify-content-between py-3">
-                                <div class="col-5">
-                                    <div class="d-flex align-items-center">
-                                        <div class="bg-primary" style="width: 30px; height: 30px;"></div>
-                                        <div><p class="ms-2 fs-08 pt-2">Kişisel Araba <span class="fw-bold"> 3Saat</span></p></div>                             
+            <div class="container-fluid gx-0 h-100">
+                <div class="row justify-content-between position-relative h-100 py-xl-3 slider_bg">
+                    <img src="img/home/mapmpbil.jpg" class="d-xl-none" style="object-fit: cover;">
+                    <div class="col-xl-7 d-none d-xl-block"></div>
+                    <div class="col-xl-4 py-xl-5 px-3 px-lg-0">
+                        <div class="villa_text_content shadow-lg m-auto m-xl-0">
+                            <div class="villa_text_content_inner">
+                                <div class="top-img text-center">
+                                    <img src="img/home/villa_text_2.png" alt="">
+                                </div>
+                                <div class="content_text p-4">
+                                    <strong>Genel Tanım</strong>
+                                    <p>For over 50 years, our Industrial segment has earned recognition for transforming
+                                        the ideas and visions of clients into reality by building and maintaining their
+                                    </p>
+                                    <p>For over 50 years, our Industrial segment has earned recognition for transforming
+                                        the ideas as of clients</p>
+                                    <div class="row justify-content-between py-3">
+                                        <div class="col-5">
+                                            <div class="d-flex align-items-center">
+                                                <div class="bg-primary" style="width: 30px; height: 30px;"></div>
+                                                <div>
+                                                    <p class="ms-2 fs-08 pt-2">Kişisel Araba <span class="fw-bold">
+                                                            3Saat</span></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="d-flex align-items-center">
+                                                <div class="bg-danger" style="width: 30px; height: 30px;"></div>
+                                                <div>
+                                                    <p class="ms-2 fs-08 pt-2">Kişisel Araba <span class="fw-bold">
+                                                            3Saat</span></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="d-flex align-items-center">
+                                                <div class="bg-success" style="width: 30px; height: 30px;"></div>
+                                                <div>
+                                                    <p class="ms-2 fs-08 pt-2">Kişisel Araba <span class="fw-bold">
+                                                            3Saat</span></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="d-flex align-items-center">
+                                                <div class="bg-info" style="width: 30px; height: 30px;"></div>
+                                                <div>
+                                                    <p class="ms-2 fs-08 pt-2">Kişisel Araba <span class="fw-bold">
+                                                            3Saat</span></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="btn mainBtn mt-3"><span>Projeyi İncele</span></a>
                                     </div>
 
                                 </div>
-                                <div class="col-5">
-                                    <div class="d-flex align-items-center">
-                                        <div class="bg-danger" style="width: 30px; height: 30px;"></div>
-                                        <div><p class="ms-2 fs-08 pt-2">Kişisel Araba <span class="fw-bold"> 3Saat</span></p></div>                             
-                                    </div>
 
-                                </div>
-                                <div class="col-5">
-                                    <div class="d-flex align-items-center">
-                                        <div class="bg-success" style="width: 30px; height: 30px;"></div>
-                                        <div><p class="ms-2 fs-08 pt-2">Kişisel Araba <span class="fw-bold"> 3Saat</span></p></div>                             
-                                    </div>
-
-                                </div>
-                                <div class="col-5">
-                                    <div class="d-flex align-items-center">
-                                        <div class="bg-info" style="width: 30px; height: 30px;"></div>
-                                        <div><p class="ms-2 fs-08 pt-2">Kişisel Araba <span class="fw-bold"> 3Saat</span></p></div>                             
-                                    </div>
-
-                                </div>
                             </div>
-                            <div class="text-center">
-                                <a href="#" class="btn mainBtn mt-3"><span>Projeyi İncele</span></a>
-                            </div>
-                            
                         </div>
-                       
                     </div>
                 </div>
-            </div>
-            <div class="project_wrapper">
-                <div class="row justify-content-center">
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                        <a href="">
-                            <div class="project_inner active">
-                                <div class="project_inner_text position-absolute top-50 start-50 translate-middle">
-                                    <img src="img/home/slider_elite_text.png" alt="">
-                                    <div class="mt-4"><i class="bi bi-arrow-right-circle fs-2 text-white"></i></div>
-                                </div>                                                           
-                                <div class="project_inner_img">                     
-                                    <img src="img/home/slider_elite.png" alt="">
+                <div class="project_wrapper px-3 px-lg-0">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <a href="">
+                                <div class="project_inner active">
+                                    <div class="project_inner_text position-absolute top-50 start-50 translate-middle">
+                                        <img src="img/home/slider_elite_text.png" alt="">
+                                        <div class="mt-4"><i class="bi bi-arrow-right-circle fs-2 text-white"></i></div>
+                                    </div>
+                                    <div class="project_inner_img">
+                                        <img src="img/home/slider_elite.png" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                        <a href="">
-                            <div class="project_inner">
-                                <div class="project_inner_text position-absolute top-50 start-50 translate-middle">
-                                    <img src="img/home/villa_text.png" alt="">
-                                    <div class="mt-4"><i class="bi bi-arrow-right-circle fs-2 text-white"></i></div>
-                                </div>                                                           
-                                <div class="project_inner_img">                     
-                                    <img src="img/home/slider_villa.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <a href="">
+                                <div class="project_inner">
+                                    <div class="project_inner_text position-absolute top-50 start-50 translate-middle">
+                                        <img src="img/home/villa_text.png" alt="">
+                                        <div class="mt-4"><i class="bi bi-arrow-right-circle fs-2 text-white"></i></div>
+                                    </div>
+                                    <div class="project_inner_img">
+                                        <img src="img/home/slider_villa.png" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                        <a href="">
-                            <div class="project_inner">
-                                <div class="project_inner_text position-absolute top-50 start-50 translate-middle">
-                                    <img src="img/home/slider_city_text.png" alt="">
-                                    <div class="mt-4"><i class="bi bi-arrow-right-circle fs-2 text-white"></i></div>
-                                </div>                                                           
-                                <div class="project_inner_img">                     
-                                    <img src="img/home/slider_city.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <a href="">
+                                <div class="project_inner">
+                                    <div class="project_inner_text position-absolute top-50 start-50 translate-middle">
+                                        <img src="img/home/slider_city_text.png" alt="">
+                                        <div class="mt-4"><i class="bi bi-arrow-right-circle fs-2 text-white"></i></div>
+                                    </div>
+                                    <div class="project_inner_img">
+                                        <img src="img/home/slider_city.png" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                        <a href="">
-                            <div class="project_inner">
-                                <div class="project_inner_text position-absolute top-50 start-50 translate-middle">
-                                    <img src="img/home/slider_suite_text.png" alt="">
-                                    <div class="mt-4"><i class="bi bi-arrow-right-circle fs-2 text-white"></i></div>
-                                </div>                                                           
-                                <div class="project_inner_img">                     
-                                    <img src="img/home/slider_suite.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <a href="">
+                                <div class="project_inner">
+                                    <div class="project_inner_text position-absolute top-50 start-50 translate-middle">
+                                        <img src="img/home/slider_suite_text.png" alt="">
+                                        <div class="mt-4"><i class="bi bi-arrow-right-circle fs-2 text-white"></i></div>
+                                    </div>
+                                    <div class="project_inner_img">
+                                        <img src="img/home/slider_suite.png" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+
                     </div>
+
 
                 </div>
 
-
             </div>
-            
+
+
 
         </div>
     </section>
-   
-    <section class="nature_safely">
+    <!-- END Villa Slider -->
+
+    <!-- Nature Safely 
+    ===========================
+    -->
+    <section class="nature_safely py-5 py-xl-0 px-3 px-xl-0">
         <div class="wrapper">
             <div class="container-fluid">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-lg-6 position-relative">
+                        <div class="title_wrap d-lg-none">
+                            <h1>Doğayı Koruyoruz</h1>
+                            <span>Projelerimizde yeşil alana öncelik veriyoruz</span>
+                        </div>
                         <img src="img/home/nature_safely.png" alt="">
                         <div class="about_mini_info_bottom">
-                            <div class="row justify-content-between">
-                                <div class="col-lg-4">
+                            <div class="row justify-content-between text-center text-md-start">
+                                <div class="col-4">
                                     <div class="d-md-flex align-items-center">
                                         <div>
                                             <img src="img/home/about_sec_mini1.png" alt="">
-                                        </div>                
+                                        </div>
                                         <div class="about_mini_info_bottom_detail">
                                             <h4>7294m<sup>2</sup></h4>
                                             <span>Yaşam Alanı</span>
-                                        </div> 
-                                    </div>                       
-                                  
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-4">
                                     <div class="d-md-flex align-items-center">
                                         <div>
                                             <img src="img/home/about_sec_mini2.png" alt="">
-                                        </div>                
+                                        </div>
                                         <div class="about_mini_info_bottom_detail">
                                             <h4>8114m<sup>2</sup></h4>
                                             <span>Yaşam Alanı</span>
-                                        </div> 
-                                    </div>                       
-                                  
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-4">
                                     <div class="d-md-flex align-items-center">
                                         <div>
                                             <img src="img/home/about_sec_mini3.png" alt="">
-                                        </div>                
+                                        </div>
                                         <div class="about_mini_info_bottom_detail">
                                             <h4>2743m<sup>2</sup></h4>
                                             <span>Yaşam Alanı</span>
-                                        </div> 
-                                    </div>                       
-                                  
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <div class="title_wrap">
+                        <div class="title_wrap d-none d-lg-block">
                             <h1>Doğayı Koruyoruz</h1>
                             <span>Projelerimizde yeşil alana öncelik veriyoruz</span>
                         </div>
-                        <p>Yüksek mukavemetli beton köprülerde, yüksek katlı yapılarda tercih edilen C50 sınıfındaki betonu Paipurth olarak Temel beton dayanımı ve su yalıtımı için bütün dairelerimizde kullandı.</p>
-                        <p>Panjurlu doğramalarla yaşamın her alanında, enerji tasarrufunun bir numaralı aracısı olan doğrama sistemleri kaliteli bir yapı ortaya çıkartıldı. Güzel bir estetik, uzun ömürlü yapılar oluşmasıyla birlikte mahremiyet ve güvenliği sizler için buluşturuldu.Yüksek mukav
-                        Yüksek mukavemetli.</p>
+                        <p>Yüksek mukavemetli beton köprülerde, yüksek katlı yapılarda tercih edilen C50 sınıfındaki
+                            betonu Paipurth olarak Temel beton dayanımı ve su yalıtımı için bütün dairelerimizde
+                            kullandı.</p>
+                        <p>Panjurlu doğramalarla yaşamın her alanında, enerji tasarrufunun bir numaralı aracısı olan
+                            doğrama sistemleri kaliteli bir yapı ortaya çıkartıldı. Güzel bir estetik, uzun ömürlü
+                            yapılar oluşmasıyla birlikte mahremiyet ve güvenliği sizler için buluşturuldu.Yüksek mukav
+                            Yüksek mukavemetli.</p>
                         <ul>
-                            <li><i class="bi bi-check-lg"></i>C50 sınıfındaki betonu Paipurth olarak Temel beton dayanımı</li>
+                            <li><i class="bi bi-check-lg"></i>C50 sınıfındaki betonu Paipurth olarak Temel beton
+                                dayanımı</li>
                             <li><i class="bi bi-check-lg"></i>Su yalıtımı için bütün dairelerimizde kullandı.</li>
-                            <li><i class="bi bi-check-lg"></i>Panjurlu doğramalarla yaşamın her alanında, enerji tasarrufunun bir num</li>
-                            <li><i class="bi bi-check-lg"></i>Sistemleri kaliteli bir yapı ortaya çıkartıldığı yüksek mukavemetli beton köprülerde,  </li>
+                            <li><i class="bi bi-check-lg"></i>Panjurlu doğramalarla yaşamın her alanında, enerji
+                                tasarrufunun bir num</li>
+                            <li><i class="bi bi-check-lg"></i>Sistemleri kaliteli bir yapı ortaya çıkartıldığı yüksek
+                                mukavemetli beton köprülerde, </li>
                         </ul>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
-   
-    <section class="news">
-        <div class="wrappers py-5"> 
+    <!-- END Nature Safely -->
+
+    <!-- News 
+    ===========================
+    -->
+    <section class="news pt-5 pt-xl-0 px-3 px-xl-0">
+        <div class="wrappers py-5">
             <div class="container-fluid g-0 overflow-hidden">
                 <div class="row align-items-center justify-content-between">
-                    <div class="col-lg-3" style="margin-left: 85px;">
+                    <div class="col-lg-3 news_title_mini">
                         <div class="title_wrap">
-                            <h1>Paipurth ile <br> Haberler</h1>
+                            <h1>Paipurth ile Haberler</h1>
                             <span class="py-3">En son çıkanlar</span>
                         </div>
-                        <div class="swiper_nav rounded-pill shadow-lg d-flex justify-content-around p-3 align-items-center" style="width: 150px; max-width: 100%;">
+                        <div class="swiper_nav rounded-pill shadow-lg d-none d-lg-flex justify-content-around p-3 align-items-center"
+                            style="width: 150px; max-width: 100%;">
                             <i class="bi bi-arrow-left fw-bold fs-3 news_nav_prev"></i>
                             <i class="bi bi-arrow-right fw-bold fs-3 news_nav_next"></i>
                         </div>
@@ -438,50 +536,62 @@
                     <div class="col-lg-8">
                         <div class="swiper news_slider">
                             <div class="swiper-wrapper">
-                              <div class="swiper-slide">
-                                  <div class="news_slide_in position-relative">
+                                <div class="swiper-slide">
+                                    <div class="news_slide_in position-relative">
                                         <img src="img/home/paipurth_news1.png" alt="">
                                         <div class="news_slide_in_text">
                                             <p>Çalışmalar Başladı</p>
                                         </div>
-                                  </div>
-                              </div>
-                              <div class="swiper-slide">
-                                  <div class="news_slide_in position-relative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="news_slide_in position-relative">
                                         <img src="img/home/paipurth_news2.png" alt="">
                                         <div class="news_slide_in_text">
                                             <p>Heyet İncelemesi Yapıldı</p>
                                         </div>
-                                  </div>
-                              </div>
-                              <div class="swiper-slide">
-                                  <div class="news_slide_in position-relative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="news_slide_in position-relative">
                                         <img src="img/home/paipurth_news3.png" alt="">
                                         <div class="news_slide_in_text">
                                             <p>Hız Kesmeden Devam Ediyor</p>
                                         </div>
-                                  </div>
-                              </div>
-        
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="swiper-pagination"></div>
-                          </div>
+                        </div>
+                    </div>
+                    <div class="swiper_nav rounded-pill justify-content-around d-flex d-lg-none m-auto p-3 align-items-center"
+                        style="width: 150px; max-width: 100%;">
+                        <i class="bi bi-arrow-left fw-bold fs-3 news_nav_prev"></i>
+                        <i class="bi bi-arrow-right fw-bold fs-3 news_nav_next"></i>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
+    <!-- END News -->
 
+    <!-- Map 
+    ===========================
+    -->
     <section class="map">
         <div class="wrappers py-5">
             <div class="container-fluid py-5 gx-0">
                 <div class="row position-relative">
-                    <div class="col-lg-5"></div>
-                    <div class="position-absolute ms-5 ps-5">
-                        <div class="contact_form bg-white">
+                    <div class="col-xl-5 d-none d-xl-block"></div>
+                    <div class="contact_form ms-xl-5 ps-xl-5">
+                        <div class="contact_form_inner m-auto m-xl-0 mb-4 mb-xl-0 bg-white">
                             <form action="">
+
                                 <h3 class="fw-bold">Bize Yazın</h3>
+
+
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <input type="text" class="form-control" placeholder="Ad Soyad">
@@ -498,20 +608,23 @@
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
-                                          </select>
+                                        </select>
                                     </div>
                                     <div class="mb-3">
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Açıklama Yazın"></textarea>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                            placeholder="Açıklama Yazın"></textarea>
                                     </div>
                                 </div>
                             </form>
                             <a href="#" class="btn mainBtn"><span>Mesaj Gönder </span></a>
                         </div>
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-xl-7">
                         <div class="map_inner">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.1244511238024!2d28.99447311566336!3d41.066272223802535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab6ff1cb31ae9%3A0xa806252f7286647f!2zTGFsZSDEsMWfIE1lcmtleg!5e0!3m2!1str!2str!4v1650454443299!5m2!1str!2str" width="100%" height="450" 
-                            style="border:0; max-width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.1244511238024!2d28.99447311566336!3d41.066272223802535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab6ff1cb31ae9%3A0xa806252f7286647f!2zTGFsZSDEsMWfIE1lcmtleg!5e0!3m2!1str!2str!4v1650454443299!5m2!1str!2str"
+                                width="100%" height="450" style="border:0; max-width: 100%;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
 
                     </div>
@@ -519,37 +632,42 @@
             </div>
         </div>
     </section>
+    <!-- END Map -->
 
+    <!-- Reference 
+    ===========================
+    -->
     <section class="reference py-5">
         <div class="wrappers">
             <div class="container-fluid">
                 <div class="swiper swiper_reference">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/global/reference_1.png" alt=""
-                                class="img-fluid"></div>
-                        <div class="swiper-slide"><img src="img/global/reference_2.png" alt=""
-                                class="img-fluid"></div>
-                        <div class="swiper-slide"><img src="img/global/reference_3.png" alt=""
-                                class="img-fluid"></div>
-                        <div class="swiper-slide"><img src="img/global/reference_4.png" alt=""
-                                class="img-fluid"></div>
-                        <div class="swiper-slide"><img src="img/global/reference_5.png" alt=""
-                                class="img-fluid"></div>
+                        <div class="swiper-slide"><img src="img/global/reference_1.png" alt="" class="img-fluid"></div>
+                        <div class="swiper-slide"><img src="img/global/reference_2.png" alt="" class="img-fluid"></div>
+                        <div class="swiper-slide"><img src="img/global/reference_3.png" alt="" class="img-fluid"></div>
+                        <div class="swiper-slide"><img src="img/global/reference_4.png" alt="" class="img-fluid"></div>
+                        <div class="swiper-slide"><img src="img/global/reference_5.png" alt="" class="img-fluid"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-   
-   
-   <footer class="footer mt-4">
-       <div class="wrapper py-5">
+    <!-- END Reference -->
+
+
+    <!-- Footer 
+    ===========================
+    -->
+    <footer class="footer mt-4">
+        <div class="wrapper py-5">
             <div class="container-fluid">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="col-lg-5">
-                        <div class="in_left d-flex align-items-center justify-content-between">
+                <div class="d-xl-flex justify-content-between align-items-center text-center text-xl-start">
+                    <div class="col-xl-5">
+                        <div
+                            class="in_left d-xl-flex align-items-center justify-content-center justify-content-xl-between">
                             <img src="img/global/paipurth_logo_2.png" alt="">
-                            <ul class="list-group list-group-horizontal gap-3">
+                            <ul
+                                class="list-group list-group-horizontal gap-3 py-4 py-xl-0 justify-content-center justify-content-xl-start">
                                 <li><a href="">Projeler</a></li>
                                 <li><a href="">Hakkımızda</a></li>
                                 <li><a href="#">Kataloglar</a></li>
@@ -557,21 +675,21 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="ms-auto col-lg-5 text-end">
-                        <div class="in-right d-flex justify-content-end">
-                            <div> 
+                    <div class="ms-auto col-xl-5 text-xl-end">
+                        <div class="in-right d-xl-flex justify-content-center justify-content-xl-end">
+                            <div>
                                 <a href="#" class="text-decoration-underline">Privacy Policy & Terms of use</a> <br>
                                 Site creation & Technology by <br>
                                 <a href="#" class="text-decoration-underline">Paipurth</a></div>
-                            <div class="ms-3 footer_icon_wrap">
+                            <div class="ms-3 footer_icon_wrap pt-4 pt-xl-0">
                                 <div>
                                     <a href="" class="bi bi-instagram fs-5"></a>
                                     <a href="" class="bi bi-youtube fs-5"></a>
                                 </div>
-                               <div>
-                                   <a href="#" class="bi bi-facebook fs-5"></a>
-                                   <a href="#" class="bi bi-twitter fs-5"></a>
-                               </div>
+                                <div>
+                                    <a href="#" class="bi bi-facebook fs-5"></a>
+                                    <a href="#" class="bi bi-twitter fs-5"></a>
+                                </div>
                             </div>
 
 
@@ -579,24 +697,69 @@
                     </div>
                 </div>
             </div>
-       </div>
-   </footer>
+        </div>
+    </footer>
+    <!-- END Footer -->
 
 
-
-   <!-- Eksiklikler -->
-
-   <!-- 
-
-    1 - Bize Yazın Formu 
-    2 - Video Modal
-    3 - Sitenin Geneline Fade
-    4 - Mapda ki yanıp sönme efekti
-    5 - Responsive
-
-    -->
-   
     <div id="cursor"></div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="middlePopup" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video src="img/home/f1.mp4" style="max-width: 100%; width: 100%;" controls autoplay></video>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="contactUs">
+        <div class="offcanvas-body d-flex flex-column justify-content-evenly align-items-center">
+            <div class="d-flex justify-content-between w-100">
+                <h5>Sizi Arayalım</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+
+            <span>Bilgilendirme için sizi en kısa sürede arayalım.</span>
+
+            <form action="">
+                <div><input type="text" name="nameSurname" class="form-control form-control-lg" placeholder="Ad Soyad">
+                </div>
+                <div><input type="text" name="email" class="form-control form-control-lg"
+                        placeholder="E-Posta Adresiniz"></div>
+                <div><input type="text" name="phone" class="form-control form-control-lg"
+                        placeholder="Telefon Numaranız"></div>
+                <div>
+                    <select class="form-select">
+                        <option selected>Proje Tercihi</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div><textarea class="form-control" name="content" rows="1" placeholder="Açıklama"></textarea></div>
+                <div class="form-check mt-5">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label fs-09" for="flexCheckChecked">
+                        Kampanyalardan haberdar olmak için <br>
+                        elektronik ileti gönderilmesini kabul ediyorum
+                    </label>
+                </div>
+            </form>
+            <a href="#" class="btn btnContact py-3">Gönder</a>
+
+        </div>
+
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

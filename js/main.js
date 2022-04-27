@@ -71,13 +71,23 @@ hoverFunction(".about_features:nth-child(6)", ".about_features:nth-child(6) img"
 
 if($(".news_slider").length > 0) {
   var swiper = new Swiper(".news_slider", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 0,
-    centeredSlides: true,
+    // centeredSlides: true,
     loop:true,
     navigation: {
       nextEl: ".news_nav_next",
       prevEl: ".news_nav_prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
     },
   });
 } 
@@ -194,7 +204,7 @@ document.addEventListener('mousemove', function(e) {
 });
 
 // Cursor HOVER modified - When hovering an element
-var cursor = document.getElementById('cursor');
+ var cursor = document.getElementById('cursor');
 var clickableCursor = document.getElementsByTagName("img", "a");
 
 for (var i = 0; i < clickableCursor.length; i++) {

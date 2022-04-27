@@ -1,0 +1,42 @@
+@use 'global' as g;
+@use 'mixin' as m;
+
+
+  //karl viewer
+  ///////////////////////////////////////
+  .karl-viewer{
+
+    &-wrap{
+        padding: 50px 0px;
+    }
+
+    &-book{
+     position: relative;
+     min-height: 225px;
+
+     @include m.responsive(768){
+       min-height: 650px;
+     }
+
+     @include m.responsive(1200){
+       position: static;
+     }
+    }
+    
+
+    @include m.responsive(1200){     
+      &-content{
+        position: absolute;
+        right: 0;
+        z-index: 987554;
+        top: 100px;
+        width: calc(100% - 100px);
+      }
+      
+      .flipbook-main-wrapper{
+        top: 190px;
+      }
+    }
+
+  }
+  

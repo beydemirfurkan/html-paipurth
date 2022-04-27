@@ -74,10 +74,9 @@
                     <li data-menuanchor="detailHero" class="active"><a href="#detailHero">Proje detayı</a></li>
                     <li data-menuanchor="detailPlain"><a href="#detailPlain">Daire planları</a></li>
                     <li data-menuanchor="detailBackFace"><a href="#detailBackFace">Dış Cephe</a></li>
-                    <li data-menuanchor="detail3D"><a href="#detail3D">3D daire görüntüsü</a></li>
+                    <li data-menuanchor="detailDrone"><a href="#detailDrone">Drone çekimi</a></li>
                     <li data-menuanchor="detailTransport"><a href="#detailTransport">Çevre ve ulaşım</a></li>
                     <li data-menuanchor="detailSocial"><a href="#detailSocial">Paipurth City Farkı</a></li>
-                    <li data-menuanchor="detailDrone"><a href="#detailDrone">Drone çekimi</a></li>
                     <li data-menuanchor="detailCatalog"><a href="#detailCatalog">Katalog</a></li>
                     <li data-menuanchor="detailNews"><a href="#detailNews">Haberler</a></li>
                 </ul>
@@ -343,29 +342,23 @@
                             </div>
                             <!-- End Back Face -->
 
-                            <!-- 3D
+                            <!-- Drone
                             =================== -->
                             <div class="section fp-auto-height-responsive h-100">
-                                <div class="project_detail_3d h-100" id="3d">
+                                <div class="project_detail_drone h-100" id="drone">
                                     <div class="container-fluid gx-0">
-                                        <div class="title_wrap text-center">
-                                            <h1 style="color: #525daa;">3D Daire Görünümü</h1>
-                                            <span class="fs-3 fw-500">William Hare was formally incorporated</span>
-                                        </div>
-                                        <div class="row pb-5 text-center">
-                                            <div class="col-12">
-                                                <img src="img/project_detail/shutterstock_797259067.png" alt="">
-                                                <div class="py-4">
-                                                    <a href="#"
-                                                        class="btn btn-outline-dark px-3 py-2 rounded-pill border-1">Projeni
-                                                        Kaydet</a>
-                                                </div>
+                                        <div class="row text-center align-items-center justify-content-center">
+                                            <div class="col-12" style="margin-top: -50px;">
+                                                <a href="https://kristallklar.tk/sanaltur/" target="_blank">
+                                                    <img src="img/project_detail/sanaltur.png" alt="" class="w-100">
+                                                </a>
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- End 3D -->
+                            <!-- End Drone -->
 
                             <!-- Transport
                             =================== -->
@@ -545,26 +538,6 @@
 
                             </div>
 
-
-                            <!-- Drone
-                            =================== -->
-                            <div class="section fp-auto-height-responsive h-100">
-                                <div class="project_detail_drone h-100" id="drone">
-                                    <div class="container-fluid gx-0">
-                                        <div class="row text-center align-items-center justify-content-center">
-                                            <div class="col-12">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                    data-bs-target="#detailVideo">
-                                                    <img src="img/project_detail/drone_poster.png" alt="" class="w-100">
-                                                </a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Drone -->
-
                             <!-- Catalog
                             =================== -->
                             <div class="section fp-auto-height-responsive h-100">
@@ -590,7 +563,7 @@
                             <div class="section fp-auto-height-responsive h-100">
                                 <div class="project_detail_plain h-100" id="news">
                                     <div class="container-fluid gx-0 h-100">
-                                        <div class="row justify-content-between">
+                                        <div class="row justify-content-center">
                                             <div class="col-lg-9 position-relative tab-content" id="v-pills-tabContent">
                                                 <div class="news_1 tab-pane fade show active" id="v-pills-news1"
                                                     role="tabpanel">
@@ -702,10 +675,10 @@
                             <div class="section fp-auto-height-responsive h-100" id="footers">
                                 <footer>
                                     <div class="container-fluid h-100 gx-0">
-                                        
+
                                         <div class="project_detail_footer">
                                             <div class="container-fluid bg-white">
-                                                <div class="row pb-5 bg-white">
+                                                <div class="row bg-white pb-3">
                                                     <div class="col-lg-3">
                                                         <h1 style="color: #525daa;">İletişim</h1>
                                                         <ul class="pt-3">
@@ -723,8 +696,7 @@
                                                             <div class="row">
                                                                 <div class="col-lg-4">
                                                                     <input class="form-control form-control-lg"
-                                                                        type="text" placeholder="Ad Soyad*"
-                                                                        required>
+                                                                        type="text" placeholder="Ad Soyad*" required>
                                                                 </div>
                                                                 <div class="col-lg-4">
                                                                     <input class="form-control form-control-lg"
@@ -736,39 +708,63 @@
                                                                         type="tel" placeholder="Telefon Numaranız">
                                                                 </div>
                                                             </div>
-                                                            <div
-                                                                class="row align-items-end justify-content-between">
+                                                            <div class="row align-items-end justify-content-between">
                                                                 <div class="col-lg-7">
-                                                                    <textarea class="form-control"
-                                                                        id="footerTextArea" rows="3"
-                                                                        placeholder="Açıklama"></textarea>
+                                                                    <textarea class="form-control" id="footerTextArea"
+                                                                        rows="3" placeholder="Açıklama"></textarea>
                                                                 </div>
                                                                 <div class="col-lg-4"><a href=""
-                                                                        class="btn mainBtn">Gönder</a></div>
+                                                                        class="btn mainBtn"><span>Gönder</span></a>
+                                                                </div>
                                                             </div>
                                                             <div class="form-check mt-4">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    value="" id="flexCheckChecked" checked>
-                                                                <label class="form-check-label"
-                                                                    for="flexCheckChecked">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="flexCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexCheckChecked">
                                                                     Kampanya koşullarını kabul ediyorum.
                                                                 </label>
                                                             </div>
                                                         </form>
                                                     </div>
                                                 </div>
-                                                <div class="footer_bottom bg-dark py-4">
+                                                <div class="footer_bottom bg-dark py-4 mt-5">
                                                     <div
                                                         class="d-flex justify-content-between align-items-center py-4 px-3">
                                                         <div class="col">
-                                                            <img src="img/global/paipurth_logo_2.png" alt="">
+                                                            <a href="index.html">
+                                                                <img src="img/global/pa_b.png" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div class="col-xl-3 text-white-50 text-end">
+                                                            <div class="d-flex">
+                                                                <div class="text-decoration-underline">
+                                                                    <a href="">Privacy Policy & Terms of use <br> Site
+                                                                        Creation & Technology by</a><br>
+                                                                    <a href="">Yaska Group</a>
+                                                                </div>
+                                                                <div class="ms-4">
+                                                                    <div>
+                                                                        <a href="" class="mx-1"><i
+                                                                                class="bi bi-facebook"></i></a>
+                                                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="" class="mx-1"><i
+                                                                                class="bi bi-twitch"></i></a>
+                                                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                           
-                                       
+
+
                                     </div>
                                 </footer>
                             </div>
@@ -787,15 +783,10 @@
 
     </main>
 
-    <div class="modal fade" id="detailVideo" tabindex="-1">
-        <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen">
-            <div class="modal-content">
-                <video src="img/product-detail/950.mp4" style="max-width: 100%;" autoplay loop controls>
-            </div>
-        </div>
-    </div>
 
     <div id="cursor"></div>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
         integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -804,11 +795,12 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/pdf/flipbook.min.js"></script>
     <script src="js/main.js"></script>
+    <!-- FullPage -->
     <script>
         var myFullpage = new fullpage('.fullpage', {
             // anchors: ['hero', 'plain', 'suit', '3d', 'transport', 'drone', 'our'],
-            anchors: ['detailHero', 'detailPlain', 'detailBackFace', 'detail3D', 'detailTransport',
-                'detailSocial', 'detailDrone', 'detailCatalog', 'detailNews'
+            anchors: ['detailHero', 'detailPlain', 'detailBackFace', 'detailDrone', 'detailTransport',
+                'detailSocial', 'detailCatalog', 'detailNews'
             ],
             menu: '#fp-menu',
             responsiveWidth: 1200,

@@ -1,5 +1,6 @@
-@use 'global'as g;
-@use 'mixin'as m;
+@use 'global' as g;
+@use 'mixin' as m;
+@use 'veriables' as v;
 
 
 .detail_nav {
@@ -10,8 +11,8 @@
             padding: 10px 0px;
             text-align: center;
             &.active {
-                 color: g.$purple!important;
-                 background: g.$gray;
+                 color: v.$purple!important;
+                 background: v.$gray;
                  font-weight: bold;
                  &::after {
                     position: absolute;
@@ -20,19 +21,18 @@
                     left: 0;
                     height: 100%;
                     width: 10px;
-                    background-color: g.$darkPurple;
+                    background-color: v.$darkPurple;
                  }
             }
         }
     }
 }
 
-
 .icon_wrapper {
     position: absolute;
     bottom: 40px;
     &_in {
-        background: rgba($color: g.$darkPurple, $alpha: .95);
+        background: rgba($color: v.$darkPurple, $alpha: .95);
         text-align: center;
         width: 750px;
         max-width: 100%;
@@ -40,7 +40,7 @@
         .icon_item {
             span {
                 display: block;
-                color: g.$white;
+                color: v.$white;
                 padding: 10px 0px;
                 &:nth-child(1) {
                     text-transform: uppercase;
@@ -50,7 +50,6 @@
         }
     }
 }
-
 
 .nav-pills {
     .nav-link {
@@ -64,7 +63,7 @@
 
 .title_detail_wrap {
     h1 {
-        color: g.$darkPurple;
+        color: v.$darkPurple;
         font-weight: bold;
     }
     span.plain_type {
@@ -73,7 +72,6 @@
             font-weight: 500;
     }
 }
-
 
 .project_detail_backface {
     .swiper-slide {
@@ -96,12 +94,12 @@
           height: 200px;
           max-width: 100%;
           .backNav {
-              background: g.$darkPurple;
+              background: v.$darkPurple;
               width: 150px;
               max-width: 100%;
           }
           .inNav {
-              background: g.$purple;
+              background: v.$purple;
               width: 150px;
               max-width: 100%;
           }
@@ -112,7 +110,7 @@
 
 .transport_wrapper {
     &_in {
-        background: rgba($color: g.$darkPurple, $alpha: .95);
+        background: rgba($color: v.$darkPurple, $alpha: .95);
         text-align: center;
         width: 800px;
         max-width: 100%;
@@ -124,7 +122,7 @@
                 font-weight: 500;
                 font-size: 11px;
                 display: block;
-                color: g.$white;
+                color: v.$white;
                 padding: 10px 0px;
                 &:nth-child(1) {
                     text-transform: uppercase;
@@ -142,14 +140,14 @@
 .social_wrapper {
     text-align: end;
     &_in {
-        background: rgba($color: g.$darkPurple, $alpha: .95);
+        background: rgba($color: v.$darkPurple, $alpha: .95);
         text-align: center;
         width: 900px;
         max-width: 100%;
         max-height: 150px;
         .nav-item {
             h3 {
-                color: g.$white;
+                color: v.$white;
                 font-size: 2rem;
                 text-align: center;
                 span {
@@ -161,7 +159,7 @@
             .nav-link {
                 padding: 25px 0px;
                 &.active {
-                    background: rgba($color: g.$purple, $alpha: .95);
+                    background: rgba($color: v.$purple, $alpha: .95);
                 }
             }
         }
@@ -170,14 +168,12 @@
 }
 
 
-
-
 .news_text_wrapper {
     position: relative;
-    background: rgba($color: g.$darkPurple, $alpha: .95);
+    background: rgba($color: v.$darkPurple, $alpha: .95);
     width: 700px;
     min-height: 80px;
-    color: g.$white;
+    color: v.$white;
     font-size: 1.8rem;
     margin-top: -100px;
     z-index: 44;
@@ -213,7 +209,7 @@
 
 #footers {
     .fp-tableCell {
-        height: 500px!important;
+        height: 530px!important;
         vertical-align: top!important;
     }
 }

@@ -1,18 +1,19 @@
 @use 'global' as g;
 @use 'mixin' as m;
+@use 'veriables' as v;
 
 
 header {
     .header_wrapper {
         padding: 20px 0px;
         .nav-link {
-            color: g.$black;
+            color: v.$black;
             font-weight: bold;
             font-size: .9em;
             letter-spacing: -.5px;
             text-transform: uppercase;
             &:hover {
-                color: g.$darkPurple;
+                color: v.$darkPurple;
             }
         }
     }
@@ -27,16 +28,16 @@ header {
         }
     
         .contact_header_btn {
-            background: g.$black;
-            color: g.$white;
+            background: v.$black;
+            color: v.$white;
             width: 125px;
             border-radius: 5px;
-            border: 1px solid g.$black;
+            border: 1px solid v.$black;
             @include m.transition();
     
             &:hover {
                 background: transparent;
-                color: g.$black;
+                color: v.$black;
             }
         }
     }
