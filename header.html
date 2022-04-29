@@ -1,0 +1,128 @@
+<div class="header_wrapper">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <div class="container-fluid g-0">
+                <div class="collapse navbar-collapse justify-content-center align-items-center position-relative"
+                    id="navbarNavAltMarkup">
+                    <div class="navbar-nav position-relative text-center text-lg-start">
+                        <a class="nav-link ms-lg-5" href="project.html">Projeler</a>
+                        <a class="nav-link ms-lg-5" href="about.html">Hakkımızda</a>
+                        <a class="nav-link ms-lg-5 changedLogo" onmouseover="changedLogo2()" onmouseout="changedLogo1()" href="index.html"><img src="img/global/logo.png"
+                                alt="" width="55" style="margin-top: -20px;"></a>
+                        <a class="nav-link ms-lg-5" href="catalog.html">Kataloglar</a>
+                        <a class="nav-link ms-lg-5" href="contact.html">İletişim</a>
+                    </div>
+                </div>
+                <div class="div position-absolute end-0 top-0 d-none d-xl-block pt-2">
+                    <div class="language position-relative d-flex align-items-center">
+                        <div class="dropdown text-center">
+                            <a class="dropdown-toggle" type="button" id="dropdownMenu2"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                               <img src="img/global/turkey.png" alt="" width="24">  TR
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><a class="dropdown-item"> <img src="img/global/turkey.png" alt="" width="24"> TR</a></li>
+                                <li><a class="dropdown-item"> <img src="img/global/saudi-arabia.png" alt="" width="24"> AR</a></li>
+                                <li><a class="dropdown-item"> <img src="img/global/uk.png" alt="" width="24"> EN</a></li>
+                            </ul>
+                        </div>
+                        <a class="btn contact_header_btn ms-4" data-bs-toggle="offcanvas" href="#contactUs"
+                            role="button">Bize Yaz</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="mobile_Menu d-xl-none">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="">
+                    <a href=""><img src="img/global/paipurth_logo_2.png" alt="" width="135"></a>
+                </div>
+                <div class="">
+                    <button class="navbar-toggler border-0" type="button" style="z-index: 999;"
+                        data-bs-toggle="offcanvas" href="#mobileMenu" role="button">
+                        <span class="bi bi-list fs-1 border-0"></span>
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+    <!-- Contact Us -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="contactUs">
+        <div class="offcanvas-body d-flex flex-column justify-content-evenly align-items-center">
+            <div class="d-flex justify-content-between w-100">
+                <h5>Sizi Arayalım</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+
+            <span>Bilgilendirme için sizi en kısa sürede arayalım.</span>
+
+            <form action="">
+                <div><input type="text" name="nameSurname" class="form-control form-control-lg" placeholder="Ad Soyad">
+                </div>
+                <div><input type="text" name="email" class="form-control form-control-lg"
+                        placeholder="E-Posta Adresiniz"></div>
+                <div><input type="text" name="phone" class="form-control form-control-lg"
+                        placeholder="Telefon Numaranız"></div>
+                <div>
+                    <select class="form-select">
+                        <option selected>Proje Tercihi</option>
+                        <option value="1">Paipurth City</option>
+                        <option value="2">Paipurth Suite</option>
+                        <option value="3">Paipurth Villa</option>
+                    </select>
+                </div>
+                <div><textarea class="form-control" name="content" rows="1" placeholder="Açıklama"></textarea></div>
+                <div class="form-check mt-3 mt-sm-5">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label fs-08" for="flexCheckChecked">
+                        Kampanyalardan haberdar olmak için <br>
+                        elektronik ileti gönderilmesini kabul ediyorum
+                    </label>
+                </div>
+            </form>
+            <a href="#" class="btn btnContact py-3">Gönder</a>
+
+        </div>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="offcanvas offcanvas-start d-xl-none" tabindex="-1" id="mobileMenu">
+        <button type="button" class="btn-close text-reset position-absolute" data-bs-dismiss="offcanvas"
+            aria-label="Close" style="top: 50px; right: 30px;"></button>
+        <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center text-center">
+            <ul>
+                <li><a href=""><img src="img/global/paipurth_logo_2.png" alt=""></a></li>
+                <li><a href="">Projeler</a></li>
+                <li><a href="">Hakkımızda</a></li>
+                <li><a href="">Katalog</a></li>
+                <li><a href="">İletişim</a></li>
+                <div class="">
+                    <a class="btn contact_header_btn" data-bs-toggle="offcanvas" href="#contactUs" role="button">Bize
+                        Yaz</a>
+                </div>
+                <div class="dropdown text-center pt-4">
+                    <a class="dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="img/global/turkey.png" alt="" width="24"> TR
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <li><a class="dropdown-item"> <img src="img/global/turkey.png" alt="" width="24"> TR</a></li>
+                        <li><a class="dropdown-item"> <img src="img/global/saudi-arabia.png" alt="" width="24"> AR</a></li>
+                        <li><a class="dropdown-item"> <img src="img/global/uk.png" alt="" width="24"> EN</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+    </div>
+

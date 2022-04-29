@@ -121,14 +121,38 @@ section.hero {
 }
 
 
+section.about {
+  .nav-link {
+    &.active {
+      background-color: transparent;
+      .about_features_inner {
+        background: v.$darkPurple;
+        p {
+          color: v.$white;
+        }
+        img {
+          filter:saturate(5);
+        }
+      }
+
+    }
+  }
+}
 
 /* ABOUT Section */
 .about_mini_info_bottom {
   background: v.$darkPurple;
-  padding: 40px 20px;
+  padding: 10px;
+  @include m.responsive(768) {
+    padding: 40px 20px;
+  }
+
   margin: 20px 0px;
   &_detail {
-    padding-left: 15px;
+    @include m.responsive(768) {
+      padding-left: 15px;
+    }
+
     h4 {
       margin: 0;
       padding: 0;
@@ -218,8 +242,8 @@ section.founder_message {
 
 /* */
 
-section.villa_slider {
-  .villa_text_content {
+section.project_promotion {
+  .project_text_content {
     width: 550px;
     max-width: 100%;
     min-height: 550px;
@@ -229,10 +253,26 @@ section.villa_slider {
     }
   }
 
-  @include m.responsive(1200) {
-    .slider_bg {
-      background-image: url(../img/home/villa_map2.png);
-      background-size: cover;
+  .project_wrapper {
+    .nav-link {
+      background: transparent;
+      &.active {
+          .project_inner {
+            &::after {
+              opacity: 1;
+            }
+            .project_inner_text {
+              z-index: 3;
+              opacity: 1;
+            }
+            .project_inner_img img {
+              @include m.transition();
+              overflow: hidden;
+            }
+          }
+        
+
+      }
     }
   }
 }
@@ -405,3 +445,36 @@ section.reference {
     }
 }
 
+
+
+
+@media(max-width:576px) {
+  .about_mini_info_bottom {
+    h4 {
+      padding-top: 15px;
+      font-size: 14px;
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+}
+
+
+.contact_page_form {
+  input,textarea {
+    font-size: 16px;
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+}
+
+.contact_icons {
+  i {
+    color: v.$darkPurple;
+  }
+  h3 {
+    padding-top: 10px;
+  }
+}

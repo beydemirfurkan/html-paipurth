@@ -22,7 +22,9 @@
   
 }
 body {
-    cursor: none!important;
+    @media(min-width:768px) {
+        cursor: none!important;
+    }
 }
 
 a {
@@ -99,7 +101,9 @@ img {
 
 @media(min-width:992px) {
 .title_wrap {
-    font-size: 3rem;
+    h1 {
+        font-size: 3rem;
+    }
 
 }
 }
@@ -272,87 +276,6 @@ section.newsletter {
 
 
 
-#cursor {
-    backface-visibility: hidden;
-    z-index: 1000000000;
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #4570fc;
-    transition: .1s;
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 100ms;
-    transition-timing-function: ease-out;
-    &::before {
-        content: '';
-        position: absolute;
-        height: 7px;
-        width: 7px;
-        border-radius: 100%;
-        background-color: transparent;
-    }
-  }
-  
-
-  #contactUs {
-      padding: 30px 20px;
-      h5 {
-          color: #d16d6d;
-          font-size: 1.6rem;
-          font-weight: bold;
-      }
-      form {
-          div {
-              margin: 30px 0px;
-          }
-        .form-control {
-            background: transparent;
-            border: 0;
-            border-radius: 0;
-            border-bottom: 1.5px solid #c2c2c2;
-            color: rgb(17, 17, 17);
-            font-size: .9rem;
-            margin: 10px 0px;
-            position: relative;
-            &:focus {
-                box-shadow: 0;
-            }
-        }
-        textarea {
-            &::placeholder {
-                position: absolute;
-                bottom: 10px;
-            }
-        }
-        select {
-            border: 0;
-            border-bottom: 1.5px solid #c2c2c2;
-            border-radius: 0;
-            color: #8b8383;
-            &:focus {
-                box-shadow: 0;
-            }
-        }
-      }
-
-    .btnContact {
-        background-color: #d16d6d;
-        color: v.$white;
-        transition: all .3s ease-in-out;
-        width: 100%;
-        padding: 5px 10px;
-        font-size: 14px;
-        font-weight: 500;
-        &:hover {
-            background-color: #c06262;
-        }
-    }
-  }
 
 
   

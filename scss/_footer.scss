@@ -20,3 +20,12 @@ footer {
         }
     }
 }
+
+@media(max-width:576px) {
+    p {
+        font-size: 13px!important;
+    }
+    ul li {
+        font-size: 11px!important;
+    }
+}
