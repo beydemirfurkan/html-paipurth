@@ -221,3 +221,91 @@ const changedLogo1 = () => {
 const changedLogo2 = () => {
   $(".changedLogo img").attr("src","img/global/logo_h.png");
 }
+
+
+
+/* const selectorChanged = (selector, presentation) => {
+  $(selector).change(() => {
+    selectVal = $(this).val();
+    for(let i = 0; i < presentation.length ; i++) {
+      if(presentation[i].dataset.value == selectVal) {
+        presentation[i].click();
+      }
+    }
+  })
+};
+
+
+selectorChanged($(".aboutSelector"), $(".about li div.nav-link"));
+
+*/
+
+var aboutSelector = $(".aboutSelector");
+
+$(aboutSelector).change(function (e) {  
+  var selectVal = $(this).val();
+  var presentation = $(".about li div.nav-link");
+
+  for(let i = 0; i < presentation.length ; i++) {
+    if(presentation[i].dataset.value == selectVal) {
+      presentation[i].click();
+    }
+  }
+});
+
+
+var projectSelector = $(".projectSelector");
+
+$(projectSelector).change(function (e) {  
+  var selectVal = $(this).val();
+  var presentation = $(".project_wrapper li div.nav-link");
+  for(let i = 0; i < presentation.length ; i++) {
+    if(presentation[i].dataset.value == selectVal) {
+      presentation[i].click();
+    }
+  }
+});
+
+
+
+var plainSelector = $(".plainSelector");
+$(plainSelector).change(function (e) {  
+  var selectVal = $(this).val();
+  var presentation = $(".plain_Nav li a.nav-link");
+  for(let i = 0; i < presentation.length ; i++) {
+    if(presentation[i].dataset.value == selectVal) {
+      presentation[i].click();
+    }
+  }
+});
+
+var mimariSelector = $(".mimariSelector");
+$(mimariSelector).change(function (e) {  
+  var selectVal = $(this).val();
+  var presentation = $(".social_wrapper_in li a.nav-link");
+  for(let i = 0; i < presentation.length ; i++) {
+    if(presentation[i].dataset.value == selectVal) {
+      presentation[i].click();
+    }
+  }
+});
+
+var newsSelector = $(".newsSelector");
+$(newsSelector).change(function (e) {  
+  var selectVal = $(this).val();
+  var presentation = $(".plain_Nav li a.nav-link");
+  for(let i = 0; i < presentation.length ; i++) {
+    if(presentation[i].dataset.value == selectVal) {
+      presentation[i].click();
+    }
+  }
+});
+
+
+
+
+
+
+
+
+

@@ -16,12 +16,6 @@
   border-radius: 10px;
 }
 
-@media (min-width: 768px) {
-  body {
-    cursor: none !important;
-  }
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -294,7 +288,7 @@ header .header_wrapper .nav-link {
   text-transform: uppercase;
 }
 header .header_wrapper .nav-link:hover {
-  color: #7a81b9 !important;
+  color: #1d5699 !important;
 }
 header .language .dropdown-menu {
   background: transparent;
@@ -305,11 +299,11 @@ header .language .dropdown-menu {
 }
 
 .contact_header_btn {
-  background: #202020;
+  background: #1d5699;
   color: #fff;
   width: 125px;
   border-radius: 5px;
-  border: 1px solid #202020;
+  border: 1px solid #1d5699;
   -webkit-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -417,6 +411,10 @@ header .language .dropdown-menu {
 }
 #contactUs .btnContact:hover {
   background-color: #c06262;
+}
+
+#mobileMenu ul li a {
+  font-size: 18px;
 }
 
 footer {
@@ -631,6 +629,7 @@ section.middle {
   background-image: url(../img/home/f2.png);
   background-size: cover;
   min-height: 100vw;
+  background-position: center center;
   background-color: #3d415d;
 }
 
@@ -840,6 +839,10 @@ section.reference .swiper_reference .swiper-slide img {
   .about_mini_info_bottom span {
     font-size: 12px;
   }
+
+  .mainBtn {
+    width: 100%;
+  }
 }
 .contact_page_form input, .contact_page_form textarea {
   font-size: 16px;
@@ -942,6 +945,12 @@ section.reference .swiper_reference .swiper-slide img {
   background: #7a81b9;
   width: 150px;
   max-width: 100%;
+}
+@media (min-width: 768px) {
+  .project_detail_backface .backfaceSwiper {
+    min-height: 100vh !important;
+    height: 100%;
+  }
 }
 
 @media (min-width: 1200px) {

@@ -210,6 +210,7 @@ section.middle {
   background-image: url(../img/home/f2.png);
   background-size: cover;
   min-height: 100vw;
+  background-position: center center;
   background-color: v.$darkPurple;
 }
 
@@ -458,6 +459,10 @@ section.reference {
       font-size: 12px;
     }
   }
+  .mainBtn {
+    width: 100%;
+  }
+
 }
 
 
@@ -478,3 +483,5 @@ section.reference {
     padding-top: 10px;
   }
 }
+
+

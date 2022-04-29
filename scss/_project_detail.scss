@@ -112,7 +112,14 @@
               max-width: 100%;
           }
       }
+      .backfaceSwiper {
+        @include m.responsive(768) {
+            min-height: 100vh!important;
+            height: 100%;
+        } 
+      }
 }
+
 
 
 .project_detail_transport {

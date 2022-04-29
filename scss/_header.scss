@@ -14,7 +14,7 @@ header {
             letter-spacing: -.5px;
             text-transform: uppercase;
             &:hover {
-                color: v.$purple!important;
+                color: #1d5699!important;
             }
 
         }
@@ -34,11 +34,11 @@ header {
 }
 
 .contact_header_btn {
-    background: v.$black;
+    background: v.$blue;
     color: v.$white;
     width: 125px;
     border-radius: 5px;
-    border: 1px solid v.$black;
+    border: 1px solid v.$blue;
     @include m.transition();
 
     &:hover {
@@ -162,3 +162,14 @@ header {
     }
   }
 
+
+  #mobileMenu {
+      ul {
+          li {
+              a {
+                  font-size: 18px;
+              }
+          }
+      }
+
+  }

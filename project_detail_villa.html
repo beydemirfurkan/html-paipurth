@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
+        integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/flipbook.style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header position-relative bg-white" style="z-index: 99999;"></header>
+
+
+    <main>
+        <div class="col-lg-3 detail_nav position-fixed top-50 start-0 translate-middle-y pe-5 d-none d-xl-block">
+            <div class="text-center"><img src="img/global/paipurth_logo_2.png" alt=""></div>
+            <div class="detail_nav_inner py-4">
+                <ul id="fp-menu">
+                    <li data-menuanchor="detailHero" class="active"><a href="#detailHero">Proje detayı</a></li>
+                    <li data-menuanchor="detailBackFace"><a href="#detailBackFace">Dış Cephe</a></li>
+                    <li data-menuanchor="detailPlain"><a href="#detailPlain">Daire planları</a></li>
+                    <li data-menuanchor="detailDrone"><a href="#detailDrone">Drone çekimi</a></li>
+                    <li data-menuanchor="detailTransport"><a href="#detailTransport">Çevre ve ulaşım</a></li>
+                    <li data-menuanchor="detailSocial"><a href="#detailSocial">Paipurth City Farkı</a></li>
+                    <li data-menuanchor="detailCatalog"><a href="#detailCatalog">Katalog</a></li>
+                    <li data-menuanchor="detailNews"><a href="#detailNews">Haberler</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="fullpage">
+            <div class="project_detail_wrapper">
+                <div class="container-fluid gx-0">
+                    <div class="row align-items-start justify-content-between">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-9">
+                            <!-- Hero
+                            =================== -->
+                            <div class="section fp-auto-height-responsive h-100 active overflow-hidden">
+                                <div class="project_detail_hero h-100" id="hero">
+                                    <div class="container-fluid gx-0">
+                                        <div class="row">
+                                            <div class="col-12">
+                                               <video src="img/home/f1.mp4" autoplay muted style="max-width: 100%;"></video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Hero -->
+
+                            
+                            <!-- Back Face
+                            =============== -->
+                            <div class="section fp-auto-height-responsive h-100">
+                                <div class="project_detail_backface py-lg-5 pb-5 pb-lg-0" id="backface">
+                                    <div class="container-fluid gx-0 overflow-hidden px-4 px-xl-0">
+                                        <div class="row justify-content-between">
+                                            <div class="col-lg-5 py-5 mt-4 pe-xl-5">
+                                                <div class="title_wrap">
+                                                    <h1 class="plain_name">Dış Cephe</h1>
+                                                    <span class="plain_type">Etkileyici Mimari Doku</span>
+                                                </div>
+                                                <p class="pt-3">
+                                                    For over 50 years, our Industrial segment has earned recognition for
+                                                    transforming the ideas and visions of clients into reality by
+                                                    building and maintaining their operational.
+                                                </p>
+                                                <p>
+                                                    For over 50 years, our Industrial segment has earned recognition for
+                                                    transforming the ideas and visions of clients into reality by
+                                                    building and maintaining their operational.
+                                                </p>
+                                                <div class="navigation-wrap d-none d-xl-flex">
+                                                    <div
+                                                        class="text-uppercase text-white text-center position-relative d-flex flex-column h-100 justify-content-center align-items-center backNav">
+                                                        <h5 class="fs-1">Dış</h5>
+                                                        <span class="d-block">Görseller</span>
+                                                        <span class="position-absolute bottom-0 mb-3 backNavCheck"><i
+                                                                class="bi bi-check-lg"></i></span>
+                                                    </div>
+                                                    <div
+                                                        class="text-uppercase text-white text-center inNav position-relative d-flex flex-column h-100 justify-content-center align-items-center inNav">
+                                                        <h5 class="fs-1">Ic</h5>
+                                                        <span class="d-block">Görseller</span>
+                                                        <span class="position-absolute bottom-0 mb-3 inNavCheck"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7 overflow-hidden">
+                                                <div class="swiper backfaceSwiper">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide backImg"><img
+                                                                src="img/project_detail/project_detail_villa/v1.jpg" alt="">
+                                                        </div>
+                                                        <div class="swiper-slide backImg"><img
+                                                                src="img/project_detail/project_detail_villa/v3.jpg" alt="">
+                                                        </div>
+                                                        <div class="swiper-slide backImg"><img
+                                                                src="img/project_detail/project_detail_villa/v4.jpg" alt="">
+                                                        </div>
+                                                        <div class="swiper-slide backImg"><img
+                                                                src="img/project_detail/project_detail_villa/v5.jpg" alt="">
+                                                        </div>
+                                                        <div class="swiper-slide backImg"><img
+                                                                src="img/project_detail/project_detail_villa/v6.jpg" alt="">
+                                                        </div>
+                                                        <div class="swiper-slide backImg"><img
+                                                                src="img/project_detail/project_detail_villa/v9.jpg" alt="">
+                                                        </div>
+
+                                                        <div class="swiper-slide inImg"><img
+                                                                src="img/project_detail/project_detail_villa/v2.jpg" alt=""></div>
+                                                        <div class="swiper-slide inImg"><img
+                                                                src="img/project_detail/project_detail_villa/v7.jpg" alt=""></div>
+                                                        <div class="swiper-slide inImg"><img
+                                                                src="img/project_detail/project_detail_villa/v8.jpg" alt=""></div>
+                                                        <div class="swiper-slide inImg"><img
+                                                                src="img/project_detail/project_detail_villa/v10.jpg" alt=""></div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="navigation-wrap d-flex d-xl-none pt-3 justify-content-center m-auto">
+                                                <div
+                                                    class="text-uppercase text-white text-center position-relative d-flex flex-column h-100 justify-content-center align-items-center backNav">
+                                                    <h5 class="fs-1">Dış</h5>
+                                                    <span class="d-block">Görseller</span>
+                                                    <span class="position-absolute bottom-0 mb-3 backNavCheck"><i
+                                                            class="bi bi-check-lg"></i></span>
+                                                </div>
+                                                <div
+                                                    class="text-uppercase text-white text-center inNav position-relative d-flex flex-column h-100 justify-content-center align-items-center inNav">
+                                                    <h5 class="fs-1">Ic</h5>
+                                                    <span class="d-block">Görseller</span>
+                                                    <span class="position-absolute bottom-0 mb-3 inNavCheck"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Back Face -->
+
+                            <!-- Plain 
+                            ================= -->
+                            <div class="section fp-auto-height-responsive h-100 pt-5">
+                                <div class="project_detail_plain h-100" id="plain">
+                                    <div class="container-fluid gx-0 h-100 px-4 px-xl-0">
+                                        <div class="row justify-content-between align-items-center">
+                                            <div class="col-lg-9 position-relative tab-content" id="v-pills-tabContent">
+                                                <h1 class="plain_name d-lg-none">Kat Planları</h1>
+                                                <select name="" id="" class="form-select plainSelector mb-3 d-lg-none">
+                                                    <option selected value="1">2+1 Standart Daireler</option>
+                                                    <option value="2">3+1 Standart Daireler</option>
+                                                    <option value="3">1+1 Standart Daireler</option>
+                                                </select>
+                                                <!-- Plain1 -->
+                                                <div class="plains_1 tab-pane fade show active" id="v-pills-detail1"
+                                                    role="tabpanel">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-lg-4">
+                                                            <div class="title_wrap">
+                                                                <h1 class="plain_name d-none d-lg-block">Kat Planları</h1>
+                                                                <span class="plain_type">2+1 Standart Daire</span>
+                                                                <div class="bg-light p-2 my-3"
+                                                                    style="width: 90px; max-width: 100%;"><strong><span
+                                                                            class="plain_m2">234</span>m<sup>2</sup></strong>
+                                                                </div>
+                                                            </div>
+                                                            <p class="plain_content">Lorem ipsum dolor sit amet
+                                                                consectetur, adipisicing elit.
+                                                                Ratione enim, distinctio id quia maxime assumenda cum
+                                                                animi
+                                                                non quam accusantium.</p>
+
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <img src="img/project_detail/project_detail_villa/f1.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="icon_wrapper">
+                                                        <div
+                                                            class="icon_wrapper_in d-flex justify-content-between align-items-center">
+                                                            <div class="col-4 col-xl-2 icon_item">
+                                                                <span>Salon</span>
+                                                                <img src="img/project_detail/plain_icon1.png" alt="">
+                                                                <span>34m<sup>2</sup></span>
+                                                            </div>
+                                                            <div class="col-4 col-xl-2 icon_item">
+                                                                <span>Oda 1</span>
+                                                                <img src="img/project_detail/plain_icon2.png" alt="">
+                                                                <span>34m<sup>2</sup></span>
+                                                            </div>
+                                                            <div class="col-4 col-xl-2 icon_item">
+                                                                <span>Oda 2</span>
+                                                                <img src="img/project_detail/plain_icon3.png" alt="">
+                                                                <span>34m<sup>2</sup></span>
+                                                            </div>
+                                                            <div class="col-4 col-xl-2 icon_item">
+                                                                <span>Mutfak</span>
+                                                                <img src="img/project_detail/plain_icon4.png" alt="">
+                                                                <span>34m<sup>2</sup></span>
+                                                            </div>
+                                                            <div class="col-4 col-xl-2 icon_item">
+                                                                <span>Banyo</span>
+                                                                <img src="img/project_detail/plain_icon5.png" alt="">
+                                                                <span>34m<sup>2</sup></span>
+                                                            </div>
+                                                            <div class="col-4 col-xl-2 icon_item">
+                                                                <span>Balkon</span>
+                                                                <img src="img/project_detail/plain_icon2.png" alt="">
+                                                                <span>34m<sup>2</sup></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Plain2 -->
+                                                <div class="plains_2 tab-pane fade" id="v-pills-detail2"
+                                                    role="tabpanel">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-lg-4">
+                                                            <div class="title_detail_wrap">
+                                                                <h1 class="plain_name d-none d-lg-block">Kat Planları</h1>
+                                                                <span class="plain_type">2+1 Standart Daire</span>
+                                                                <div class="bg-light p-2 my-3"
+                                                                    style="width: 90px; max-width: 100%;"><strong><span
+                                                                            class="plain_m2">234</span>m<sup>2</sup></strong>
+                                                                </div>
+                                                            </div>
+                                                            <p class="plain_content">Lorem ipsum dolor sit amet
+                                                                consectetur, adipisicing elit.
+                                                                Ratione enim, distinctio id quia maxime assumenda cum
+                                                                animi
+                                                                non quam accusantium.</p>
+
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <img src="img/project_detail/project_detail_villa/f2.jpg" alt="">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="icon_wrapper">
+                                                        <div
+                                                            class="icon_wrapper_in d-flex justify-content-between align-items-center">
+                                                            <div class="col-4 col-xl-2 icon_item">
+                                                                <span>Salon</span>
+                                                                <img src="img/project_detail/plain_icon1.png" alt="">
+                                                                <span>34m<sup>2</sup></span>
+                                                            </div>
+                                                            <div class="col-4 col-xl-2 icon_item">
+                                                                <span>Oda 1</span>
+                                                                <img src="img/project_detail/plain_icon2.png" alt="">
+                                                                <span>34m<sup>2</sup></span>
+                                                            </div>
+                                                            <div class="col-4 col-xl-2 icon_item">
+                                                                <span>Oda 2</span>
+                                                                <img src="img/project_detail/plain_icon3.png" alt="">
+                                                                <span>34m<sup>2</sup></span>
+                                                            </div>
+                                                            <div class="col-4 col-xl-2 icon_item">
+                                                                <span>Mutfak</span>
+                                                                <img src="img/project_detail/plain_icon4.png" alt="">
+                                                                <span>34m<sup>2</sup></span>
+                                                            </div>
+                                                            <div class="col-4 col-xl-2 icon_item">
+                                                                <span>Banyo</span>
+                                                                <img src="img/project_detail/plain_icon5.png" alt="">
+                                                                <span>34m<sup>2</sup></span>
+                                                            </div>
+                                                            <div class="col-4 col-xl-2 icon_item">
+                                                                <span>Balkon</span>
+                                                                <img src="img/project_detail/plain_icon2.png" alt="">
+                                                                <span>34m<sup>2</sup></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Plain3 -->
+                                                <div class="plains_3 tab-pane fade" id="v-pills-detail3"
+                                                    role="tabpanel">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-lg-4">
+                                                            <div class="title_detail_wrap">
+                                                                <h1 class="plain_name d-none d-lg-block">Kat Planları</h1>
+                                                                <span class="plain_type">2+1 Standart Daire</span>
+                                                                <div class="bg-light p-2 my-3"
+                                                                    style="width: 90px; max-width: 100%;"><strong><span
+                                                                            class="plain_m2">234</span>m<sup>2</sup></strong>
+                                                                </div>
+                                                            </div>
+                                                            <p class="plain_content">Lorem ipsum dolor sit amet
+                                                                consectetur, adipisicing elit.
+                                                                Ratione enim, distinctio id quia maxime assumenda cum
+                                                                animi
+                                                                non quam accusantium.</p>
+
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <img src="img/project_detail/project_detail_villa/f3.jpg" alt="">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="icon_wrapper">
+                                                        <div
+                                                            class="icon_wrapper_in d-flex justify-content-between align-items-center">
+                                                            <div class="col-4 col-xl-2 icon_item">
+                                                                <span>Salon</span>
+                                                                <img src="img/project_detail/plain_icon1.png" alt="">
+                                                                <span>34m<sup>2</sup></span>
+                                                            </div>
+                                                            <div class="col-4 col-xl-2 icon_item">
+                                                                <span>Oda 1</span>
+                                                                <img src="img/project_detail/plain_icon2.png" alt="">
+                                                                <span>34m<sup>2</sup></span>
+                                                            </div>
+                                                            <div class="col-4 col-xl-2 icon_item">
+                                                                <span>Oda 2</span>
+                                                                <img src="img/project_detail/plain_icon3.png" alt="">
+                                                                <span>34m<sup>2</sup></span>
+                                                            </div>
+                                                            <div class="col-4 col-xl-2 icon_item">
+                                                                <span>Mutfak</span>
+                                                                <img src="img/project_detail/plain_icon4.png" alt="">
+                                                                <span>34m<sup>2</sup></span>
+                                                            </div>
+                                                            <div class="col-4 col-xl-2 icon_item">
+                                                                <span>Banyo</span>
+                                                                <img src="img/project_detail/plain_icon5.png" alt="">
+                                                                <span>34m<sup>2</sup></span>
+                                                            </div>
+                                                            <div class="col-4 col-xl-2 icon_item">
+                                                                <span>Balkon</span>
+                                                                <img src="img/project_detail/plain_icon2.png" alt="">
+                                                                <span>34m<sup>2</sup></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-3 text-center text-xl-end pt-3 pt-xl-0 d-none d-lg-block">
+                                                <h4 class="py-3 text-start d-lg-none">Diğer Planlar</h4>
+
+                                                <div class="plain_Nav">
+
+                                                    <ul class="nav nav-pills justify-content-end" id="v-pills-tab"
+                                                        role="tablist">
+                                                        <li class="nav-item pb-3" role="presentation">
+                                                            <a class="nav-link active" id="v-pills-detail1-tab"
+                                                                data-bs-toggle="pill" data-value="1" data-bs-target="#v-pills-detail1"
+                                                                type="button" role="tab">
+                                                                <img src="img/project_detail/fb1.png" alt=""
+                                                                    class="img-fluid">
+                                                                <span class="d-block pe-xl-3 pt-3">2+1 Standart
+                                                                    Daire</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item pb-3" role="presentation">
+                                                            <a class="nav-link" id="v-pills-detail1-tab"
+                                                                data-bs-toggle="pill" data-value="2" data-bs-target="#v-pills-detail2"
+                                                                type="button" role="tab">
+                                                                <img src="img/project_detail/fb2.png" alt=""
+                                                                    class="img-fluid">
+                                                                <span class="d-block pe-xl-3 pt-3">2+1 Standart
+                                                                    Daire</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link" id="v-pills-detail1-tab"
+                                                                data-bs-toggle="pill" data-value="3" data-bs-target="#v-pills-detail3"
+                                                                type="button" role="tab">
+                                                                <img src="img/project_detail/fb3.png" alt=""
+                                                                    class="img-fluid">
+                                                                <span class="d-block pe-xl-3 pt-3">2+1 Standart
+                                                                    Daire</span>
+                                                            </a>
+                                                        </li>
+
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Plain -->
+
+
+                            <!-- Drone
+                            =================== -->
+                            <div class="section fp-auto-height-responsive h-100 py-5 py-lg-0 GraySec">
+                                <div class="container">
+                                    <div class="title_wrap mb-4 d-lg-none">
+                                        <h1>Sanal Tur</h1>
+                                        <span>360 derece sanal turu görmek için lütfen tıklayınız.</span>
+                                    </div>
+                                </div>
+
+                                <div class="project_detail_drone h-100" id="drone">
+                                    <div class="container-fluid gx-0">
+                                        <div class="row text-center align-items-center justify-content-center">
+                                            <div class="col-12" style="margin-top: -50px;">
+                                                <a href="https://kristallklar.tk/sanaltur/" target="_blank">
+                                                    <img src="img/project_detail/sanaltur.png" alt="" class="w-100">
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Drone -->
+
+                            <!-- Transport
+                            =================== -->
+                            <div class="section fp-auto-height-responsive h-100">
+                                <div class="project_detail_transport" id="transport">
+                                    <div class="container-fluid gx-0 px-4 px-xl-0 py-5 py-lg-0">
+                                        <div class="row justify-content-between align-items-start">
+                                            <div class="col-xl-4 pb-0">
+                                                <div class="title_wrap">
+                                                    <h1>Çevre ve Ulaşım</h1>
+                                                    <span class="fw-500">Paipurt City size kolay ulaşım ve bolca
+                                                        çevresel faktörler sunar</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-7">
+                                                <div class="transport_wrapper position-relative">
+                                                    <img src="img/project_detail/project_detail_maps.png" alt="" class="d-xl-none">
+                                                    <div
+                                                        class="transport_wrapper_in d-flex justify-content-between align-items-center">
+                                                        <div class="col-4 col-xl-2 icon_item">
+                                                            <span>Hastane</span>
+                                                            <img src="img/project_detail/plain_transport_icon1.png"
+                                                                alt="">
+                                                            <span>34m<sup>2</sup></span>
+                                                        </div>
+                                                        <div class="col-4 col-xl-2 icon_item">
+                                                            <span>AVM</span>
+                                                            <img src="img/project_detail/plain_transport_icon2.png"
+                                                                alt="">
+                                                            <span>34m<sup>2</sup></span>
+                                                        </div>
+                                                        <div class="col-4 col-xl-2 icon_item">
+                                                            <span>Super Market</span>
+                                                            <img src="img/project_detail/plain_transport_icon3.png"
+                                                                alt="">
+                                                            <span>34m<sup>2</sup></span>
+                                                        </div>
+                                                        <div class="col-4 col-xl-2 icon_item">
+                                                            <span>Otobüs DRK.</span>
+                                                            <img src="img/project_detail/plain_transport_icon4.png"
+                                                                alt="">
+                                                            <span>34m<sup>2</sup></span>
+                                                        </div>
+                                                        <div class="col-4 col-xl-2 icon_item">
+                                                            <span>Metro</span>
+                                                            <img src="img/project_detail/plain_transport_icon5.png"
+                                                                alt="">
+                                                            <span>34m<sup>2</sup></span>
+                                                        </div>
+                                                        <div class="col-4 col-xl-2 icon_item">
+                                                            <span>Park Alanı</span>
+                                                            <img src="img/project_detail/plain_transport_icon6.png"
+                                                                alt="">
+                                                            <span>34m<sup>2</sup></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Transport -->
+
+
+                            <!-- Social 
+                            =============== -->
+                            <div class="section fp-auto-height-responsive h-100">
+                                <div class="project_detail_social" id="social">
+                                    <div class="container-fluid gx-0 px-4 px-xl-0">
+                                        <h1 class="fw-bold d-lg-none">Paipurth City Farkı</h1>
+                                        <select name="" id="" class="form-select mimariSelector d-lg-none">
+                                            <option selected value="1">Mimari Dokunuş</option>
+                                            <option value="2">Sosyal Olanak</option>
+                                            <option value="3">Doğal Yaşam</option>
+                                            <option value="4">Çocuk Alanları</option>
+                                        </select>
+                                        <div class="social_wrapper d-none d-xl-block">
+                                            <div class="social_wrapper_in">
+
+                                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                                    <li class="col-3 nav-item">
+                                                        <a href="#" class="nav-link active" id="pills-social1-tab"
+                                                            data-bs-toggle="pill" data-value="1" data-bs-target="#pills-social1"
+                                                            role="tab">
+                                                            <h3>Mimari <span>Dokunuş</span></h3>
+                                                        </a>
+                                                    </li>
+                                                    <li class="col-3 nav-item">
+                                                        <a href="#" class="nav-link" id="pills-social2-tab"
+                                                            data-bs-toggle="pill" data-value="2" data-bs-target="#pills-social2"
+                                                            role="tab">
+                                                            <h3>Sosyal <span>Olanak</span></h3>
+                                                        </a>
+                                                    </li>
+                                                    <li class="col-3 nav-item">
+                                                        <a href="#" class="nav-link" id="pills-social3-tab"
+                                                            data-bs-toggle="pill" data-value="3" data-bs-target="#pills-social3"
+                                                            role="tab">
+                                                            <h3>Doğal <span>Yaşam</span></h3>
+                                                        </a>
+                                                    </li>
+                                                    <li class="col-3 nav-item">
+                                                        <a href="#" class="nav-link" id="pills-social4-tab"
+                                                            data-bs-toggle="pill" data-value="4" data-bs-target="#pills-social4"
+                                                            role="tab">
+                                                            <h3>Çocuk <span>Alanları</span></h3>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-content">
+                                            <div class="tab-pane show fade active" id="pills-social1" role="tabpanel">
+                                                <div class="row justify-content-between align-items-start">
+                                                    <div class="col-lg-4 pt-5 mt-xl-5 ">
+
+                                                        <div class="title_wrap">
+                                                            <h1>Mimari Dokunuş</h1>
+                                                            <span class="fs-5 fw-500">Paipurt City size kolay ulaşım ve
+                                                                bolca
+                                                                çevresel faktörler sunar</span>
+                                                        </div>
+                                                        <p>For over 50 years, our Industrial segment has earned
+                                                            recognition for transforming the ideas and visions of
+                                                            clients into reality by building and maintaining their
+                                                            operational.</p>
+                                                        <p>For over 50 years, our Industrial segment has earned
+                                                            recognition for transforming the ideas and visions of
+                                                            clients into reality by building and maintaining their
+                                                            operational.</p>
+                                                        <p>For over 50 years, our Industrial segment has earned
+                                                            recognition for transforming the ideas and visions of
+                                                            clients into reality by building and maintaining their
+                                                            operational.</p>
+
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <img src="img/project_detail/project_detail_villa/mimari_dokunuslar.jpg" alt="">
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="tab-pane fade" id="pills-social2" role="tabpanel">
+                                                <div class="row justify-content-between align-items-start">
+                                                    <div class="col-lg-4 pt-5 mt-5">
+
+                                                        <div class="title_wrap">
+                                                            <h1>Sosyal Olanak</h1>
+                                                            <span class="fs-5 fw-500">Paipurt City size kolay ulaşım ve
+                                                                bolca
+                                                                çevresel faktörler sunar</span>
+                                                        </div>
+                                                        <p>For over 50 years, our Industrial segment has earned
+                                                            recognition for transforming the ideas and visions of
+                                                            clients into reality by building and maintaining their
+                                                            operational.</p>
+                                                        <p>For over 50 years, our Industrial segment has earned
+                                                            recognition for transforming the ideas and visions of
+                                                            clients into reality by building and maintaining their
+                                                            operational.</p>
+                                                        <p>For over 50 years, our Industrial segment has earned
+                                                            recognition for transforming the ideas and visions of
+                                                            clients into reality by building and maintaining their
+                                                            operational.</p>
+
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <img src="img/project_detail/plain_social_hero.png" alt="">
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="tab-pane fade" id="pills-social3" role="tabpanel">
+                                                <div class="row justify-content-between align-items-start">
+                                                    <div class="col-lg-4 pt-5 mt-5">
+
+                                                        <div class="title_wrap">
+                                                            <h1>Doğal Yaşam</h1>
+                                                            <span class="fs-5 fw-500">Paipurt City size kolay ulaşım ve
+                                                                bolca
+                                                                çevresel faktörler sunar</span>
+                                                        </div>
+                                                        <p>For over 50 years, our Industrial segment has earned
+                                                            recognition for transforming the ideas and visions of
+                                                            clients into reality by building and maintaining their
+                                                            operational.</p>
+                                                        <p>For over 50 years, our Industrial segment has earned
+                                                            recognition for transforming the ideas and visions of
+                                                            clients into reality by building and maintaining their
+                                                            operational.</p>
+                                                        <p>For over 50 years, our Industrial segment has earned
+                                                            recognition for transforming the ideas and visions of
+                                                            clients into reality by building and maintaining their
+                                                            operational.</p>
+
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <img src="img/project_detail/project_detail_villa/dogal_yasam.jpg" alt="">
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-social4" role="tabpanel">
+                                                <div class="row justify-content-between align-items-start">
+                                                    <div class="col-lg-4 pt-5 mt-5">
+
+                                                        <div class="title_wrap">
+                                                            <h1>Çocuk Alanları</h1>
+                                                            <span class="fs-5 fw-500">Paipurt City size kolay ulaşım ve
+                                                                bolca
+                                                                çevresel faktörler sunar</span>
+                                                        </div>
+                                                        <p>For over 50 years, our Industrial segment has earned
+                                                            recognition for transforming the ideas and visions of
+                                                            clients into reality by building and maintaining their
+                                                            operational.</p>
+                                                        <p>For over 50 years, our Industrial segment has earned
+                                                            recognition for transforming the ideas and visions of
+                                                            clients into reality by building and maintaining their
+                                                            operational.</p>
+                                                        <p>For over 50 years, our Industrial segment has earned
+                                                            recognition for transforming the ideas and visions of
+                                                            clients into reality by building and maintaining their
+                                                            operational.</p>
+
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <img src="img/project_detail/project_detail_villa/cocuklar_icin_guvenli.jpg" alt="">
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- End Social -->
+
+                            </div>
+
+                            <!-- Catalog
+                            =================== -->
+                            <div class="section fp-auto-height-responsive h-100">
+                                <div class="project_detail_drone h-100 mb-xl-5" id="drone">
+                                    <div class="container-fluid gx-0 px-4 px-xl-0">
+                                        <div class="karl-viewer h-100">
+                                            <div class="karl-viewer-wrap h-100 position-relative">
+                                                <div class="karl-viewer-content text-center d-md-flex flex-column justify-content-center">
+                                                    <div class="title_wrap d-lg-none">
+                                                        <h1>Katalog</h1>
+                                                        <span class="d">Paipurth Katalog</span>
+                                                    </div>
+                                                </div>
+                                                <div id="pdf-book" class="karl-viewer-book align-self-center">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Catalog -->
+
+                            <!-- News 
+                            ================= -->
+                            <div class="section fp-auto-height-responsive h-100 GraySec">
+                                <div class="project_detail_news h-100" id="news">
+                                    <div class="container-fluid gx-0 h-100 px-4 px-xl-0 py-4 py-lg-0">
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-9 position-relative tab-content" id="v-pills-tabContent">
+                                                <h1 class="mb-3 fw-bold d-lg-none">Proje
+                                                    Haberleri</h1>
+                                                    <select name="" id="" class="form-select newsSelector d-lg-none mb-3">
+                                                        <option selected value="1">Haber1</option>
+                                                        <option value="2">Haber2</option>
+                                                    </select>
+                                                <div class="news_1 tab-pane fade show active" id="v-pills-news1"
+                                                    role="tabpanel">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-lg-12">
+                                                            <h1 class="mb-3 fw-bold d-none d-lg-block">Proje
+                                                                Haberleri</h1>
+                                                            <img src="img/project_detail/project_detail_news.png"
+                                                                alt="">
+                                                            <div class="news_text_wrapper">
+                                                                Paipurth heyeti ve kocaeli belediye başkanı
+                                                                şantiyemizde incelemelerde bulundu
+                                                            </div>
+                                                            <div class="pt-5">
+                                                                <p>For over 50 years, our Industrial segment has earned
+                                                                    recognition for transforming the ideas and visions
+                                                                    of clients into reality by building and maintaining
+                                                                    their operational. Over 50 years, our Industrial
+                                                                    segment has earned recognition for transforming the
+                                                                    ideas and visions of clients into reality by
+                                                                    building and maintaining their operational.</p>
+                                                                <p>For over 50 years, our Industrial segment has earned
+                                                                    recognition for transforming the ideas and visions
+                                                                    of clients into reality by building and maintaining
+                                                                    their operational.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="news_2 tab-pane fade" id="v-pills-news2" role="tabpanel">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-lg-12">
+                                                            <h1 class="mb-3 fw-bold d-none d-lg-block">Proje
+                                                                Haberleri</h1>
+                                                            <img src="img/project_detail/project_detail_news.png"
+                                                                alt="">
+                                                            <div class="news_text_wrapper">
+                                                                Paipurth heyeti ve kocaeli belediye başkanı
+                                                                şantiyemizde incelemelerde bulundu
+                                                            </div>
+                                                            <div class="pt-5">
+                                                                <p>For over 50 years, our Industrial segment has earned
+                                                                    recognition for transforming the ideas and visions
+                                                                    of clients into reality by building and maintaining
+                                                                    their operational. Over 50 years, our Industrial
+                                                                    segment has earned recognition for transforming the
+                                                                    ideas and visions of clients into reality by
+                                                                    building and maintaining their operational.</p>
+                                                                <p>For over 50 years, our Industrial segment has earned
+                                                                    recognition for transforming the ideas and visions
+                                                                    of clients into reality by building and maintaining
+                                                                    their operational.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-3 text-center text-xl-end d-none d-lg-block">
+                                                <div class="plain_Nav">
+
+                                                    <ul class="nav nav-pills justify-content-end" id="v-pills-tab"
+                                                        role="tablist">
+                                                        <li class="nav-item pb-3" role="presentation">
+                                                            <a class="nav-link active" id="v-pills-news1-tab"
+                                                                data-bs-toggle="pill" data-value="1" data-bs-target="#v-pills-news1"
+                                                                type="button" role="tab">
+                                                                <img src="img/project_detail/news_select1.png" alt=""
+                                                                    width="200" class="img-fluid">
+                                                                <span class="d-block pe-xl-3 pt-3">2+1 Standart
+                                                                    Daire</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item pb-3" role="presentation">
+                                                            <a class="nav-link" id="v-pills-news2-tab"
+                                                                data-bs-toggle="pill" data-value="2" data-bs-target="#v-pills-news2"
+                                                                type="button" role="tab">
+                                                                <img src="img/project_detail/news_select2.png" alt=""
+                                                                    width="200" class="img-fluid">
+                                                                <span class="d-block pe-xl-3 pt-3">2+1 Standart
+                                                                    Daire</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link" id="v-pills-news3-tab"
+                                                                data-bs-toggle="pill" data-value="3" data-bs-target="#v-pills-news3"
+                                                                type="button" role="tab">
+                                                                <img src="img/project_detail/news_select1.png" alt=""
+                                                                    width="200" class="img-fluid">
+                                                                <span class="d-block pe-xl-3 pt-3">2+1 Standart
+                                                                    Daire</span>
+                                                            </a>
+                                                        </li>
+
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End News -->
+                            <!-- Footer
+                                ================== -->
+                            <div class="section fp-auto-height-responsive h-100" id="footers">
+                                <footer>
+                                    <div class="container-fluid h-100 gx-0">
+
+                                        <div class="project_detail_footer">
+                                            <div class="container-fluid bg-white text-center text-lg-start">
+                                                <div class="row bg-white pb-3 px-4 px-xl-0 py-4 py-lg-0">
+                                                    <div class="col-lg-3">
+                                                        <div class="title_wrap pb-2">
+                                                            <h1>İletişim</h1>
+                                                        </div>
+                                                       
+                                                        <ul class="pt-3 pt-lg-0 mobileFonts">
+                                                            <li><a href="#">Kurfürstendamm 72 10709</a></li>
+                                                            <li><a href="#">Berlin Deutschland</a></li>
+                                                            <li><a href="tel:491787603917">Tel +491787603917</a>
+                                                            </li>
+                                                            <li><a
+                                                                    href="mailto:info@paipurth.com.tr">info@paipurth.com.tr</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <form action="" class="footerForm">
+                                                            <div class="row">
+                                                                <div class="col-lg-4">
+                                                                    <input class="form-control form-control-lg"
+                                                                        type="text" placeholder="Ad Soyad*" required>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <input class="form-control form-control-lg"
+                                                                        type="email" placeholder="E-mail adres*"
+                                                                        required>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <input class="form-control form-control-lg"
+                                                                        type="tel" placeholder="Telefon Numaranız">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row align-items-end justify-content-between">
+                                                                <div class="col-lg-7">
+                                                                    <textarea class="form-control" id="footerTextArea"
+                                                                        rows="3" placeholder="Açıklama"></textarea>
+                                                                </div>
+                                                                <div class="col-lg-4"><a href=""
+                                                                        class="btn mainBtn"><span>Gönder</span></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-check mt-4">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="flexCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexCheckChecked">
+                                                                    Kampanya koşullarını kabul ediyorum.
+                                                                </label>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="footer_bottom bg-dark py-4 mt-5">
+                                                    <div
+                                                        class="d-md-flex justify-content-center justify-content-md-between align-items-center text-center text-md-start py-4 px-md-3">
+                                                        <div class="col-12 col-xl-auto">
+                                                            <a href="index.html">
+                                                                <img src="img/global/pa_b.png" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div class="col-xl-3 text-white-50 text-md-end pt-3 pt-md-0">
+                                                            <div class="d-md-flex px-4 px-xl-0">
+                                                                <div class="text-decoration-underline">
+                                                                    <a href="">Privacy Policy & Terms of use <br> Site
+                                                                        Creation & Technology by</a><br>
+                                                                    <a href="">Yaska Group</a>
+                                                                </div>
+                                                                <div class="ms-md-4 pt-4 pt-md-0">
+                                                                    <div>
+                                                                        <a href="" class="mx-1"><i
+                                                                                class="bi bi-facebook"></i></a>
+                                                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="" class="mx-1"><i
+                                                                                class="bi bi-twitch"></i></a>
+                                                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </footer>
+                            </div>
+
+                            <!-- End Footer  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </main>
+
+    <div id="cursor"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
+        integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/pdf/flipbook.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- FullPage -->
+    <script>
+        var myFullpage = new fullpage('.fullpage', {
+            // anchors: ['hero', 'plain', 'suit', '3d', 'transport', 'drone', 'our'],
+            anchors: ['detailHero', 'detailBackFace', 'detailPlain', 'detailDrone', 'detailTransport',
+                'detailSocial', 'detailCatalog', 'detailNews'
+            ],
+            menu: '#fp-menu',
+            responsiveWidth: 1200,
+            scrollHorizontally: true,
+            dragAndMove: true,
+        });
+    </script>
+
+    <!-- PDF -->
+    <script>
+        jQuery(document).ready(function () {
+            jQuery("#pdf-book").flipBook({
+                pdfUrl: "pdf/12_dairelik.pdf",
+                backgroundColor: "#fff"
+            });
+        })
+
+        $(document).ready(function () {
+            $("#pdf-book").one("mouseover", ".flipbook-bookLayer", function () {
+                setTimeout(() => {
+                    $(".icon-play").click()
+                }, 1500);
+            })
+        })
+    </script>
+</body>
+
+</html>
