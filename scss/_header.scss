@@ -4,9 +4,9 @@
 
 
 header {
+    padding: 20px 0px;
     transition: all .3s ease-in-out;
     .header_wrapper {
-        padding: 20px 0px;
         .nav-link {
             color: #000!important;
             font-weight: bold;
@@ -36,8 +36,10 @@ header {
 .contact_header_btn {
     background: v.$blue;
     color: v.$white;
-    width: 125px;
-    border-radius: 5px;
+    width: 150px;
+    padding: 10px 0px;
+    border-radius: 0px;
+    line-height: 1.4;
     border: 1px solid v.$blue;
     @include m.transition();
 
@@ -107,7 +109,7 @@ header {
   #contactUs {
       padding: 30px 20px;
       h5 {
-          color: #d16d6d;
+          color: #1d5699;
           font-size: 1.6rem;
           font-weight: bold;
       }
@@ -149,7 +151,7 @@ header {
       }
 
     .btnContact {
-        background-color: #d16d6d;
+        background-color: #1d5699;
         color: v.$white;
         transition: all .3s ease-in-out;
         width: 100%;

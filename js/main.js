@@ -57,7 +57,6 @@ var swiper = new Swiper(".swiper_hero_bottom", {
   // END Swiper Hero
 
 
-
 if($(".news_slider").length > 0) {
   var swiper = new Swiper(".news_slider", {
     slidesPerView: 1,
@@ -82,7 +81,6 @@ if($(".news_slider").length > 0) {
 } 
 
 
-
 if ($(".swiper_reference").length > 0) {
   var second = new Swiper(".swiper_reference", {
     loop: true,
@@ -105,15 +103,9 @@ if ($(".swiper_reference").length > 0) {
         slidesPerView: 4,
         spaceBetween: 20,
       },
-
-      1366: {
-        slidesPerView: 5,
-        spaceBetween: 30,
-      },
     },
   });
 }
-
 
 if($(".backfaceSwiper").length > 0) {
   var swiper = new Swiper(".backfaceSwiper", {
@@ -121,28 +113,49 @@ if($(".backfaceSwiper").length > 0) {
     centeredSlides: true,
     spaceBetween: 30,
     loop:true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+});
+}
+
+if($(".infaceSwiper").length > 0) {
+  var swiper = new Swiper(".infaceSwiper", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 30,
+    loop:true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
 });
 }
 
 
 if($(".navigation-wrap").length > 0 ) {
-  var inNav = $(".inNav");
-  var backNav = $(".backNav");
-  $(".inImg").hide();
+  let inNav = $(".inNav");
+  let backNav = $(".backNav");
+  let backfaceSwiper = $(".backfaceSwiper");
+  let infaceSwiper = $(".infaceSwiper");
   
-  inNav.click(() => {
-    $(".inImg").show();
-    $(".backImg").hide();
-    $("inNavCheck").text()= `<i class="bi bi-check-lg"></i>`;
-  });
+  if(inNav.click(function () {  
+    backfaceSwiper.addClass("d-none");
+    infaceSwiper.removeClass("d-none");
+  }));
 
-  backNav.click(() => {
-    $(".inImg").hide();
-    $(".backImg").show();
-  })
+  if(backNav.click(function () { 
+    backfaceSwiper.removeClass("d-none");
+    infaceSwiper.addClass("d-none");
+   }));
+
+  // inNav.click(() => {
+
+  // });
+
 
 };
-
 
 
 // About 
@@ -189,7 +202,6 @@ for (var i = 0; i < clickableCursor.length; i++) {
     });
 }
 }
-
 
 
 // Sticky Bar
@@ -240,6 +252,11 @@ selectorChanged($(".aboutSelector"), $(".about li div.nav-link"));
 
 */
 
+
+const selectorMobile = (selector, presentationTab, ) => {
+  
+}
+
 var aboutSelector = $(".aboutSelector");
 
 $(aboutSelector).change(function (e) {  
@@ -255,7 +272,6 @@ $(aboutSelector).change(function (e) {
 
 
 var projectSelector = $(".projectSelector");
-
 $(projectSelector).change(function (e) {  
   var selectVal = $(this).val();
   var presentation = $(".project_wrapper li div.nav-link");
@@ -265,7 +281,6 @@ $(projectSelector).change(function (e) {
     }
   }
 });
-
 
 
 var plainSelector = $(".plainSelector");

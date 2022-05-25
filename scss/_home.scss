@@ -141,22 +141,16 @@ section.about {
 
 /* ABOUT Section */
 .about_mini_info_bottom {
-  background: v.$darkPurple;
   padding: 10px;
-  @include m.responsive(768) {
-    padding: 40px 20px;
+  margin: 20px 0px;
+  img  {
+    filter: brightness(20%);
   }
 
-  margin: 20px 0px;
   &_detail {
-    @include m.responsive(768) {
-      padding-left: 15px;
-    }
-
     h4 {
       margin: 0;
       padding: 0;
-      color: v.$white;
       font-weight: 500;
       line-height: normal;
     }
@@ -164,10 +158,25 @@ section.about {
       margin: 0;
       padding: 0;
       font-size: 13px;
-      color: v.$white;
       font-style: italic;
-      font-weight: lighter;
       letter-spacing: -0.5px;
+    }
+  }
+    @include m.responsive(768) {
+    background: v.$darkPurple;
+    padding: 40px 20px;
+    img {
+      filter: none;
+    }
+    &_detail {
+      padding-left: 15px;
+      h4 {
+        color: v.$white;
+      }
+      span {
+        color: v.$white;
+        font-weight: lighter;
+      }
     }
   }
 }

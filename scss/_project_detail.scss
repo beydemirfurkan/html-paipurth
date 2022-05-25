@@ -77,6 +77,9 @@
 }
 
 .project_detail_backface {
+    &::selection {
+        background-color: transparent!important;
+    }
     .swiper-slide {
         margin-right: 30px;
         // opacity: .5;
@@ -112,10 +115,11 @@
               max-width: 100%;
           }
       }
-      .backfaceSwiper {
+      .backfaceSwiper, .infaceSwiper {
         @include m.responsive(768) {
             min-height: 100vh!important;
             height: 100%;
+
         } 
       }
 }
@@ -124,7 +128,45 @@
 
 .project_detail_transport {
     @include m.responsive(1200) {
-        background-image: url(../img/project_detail/project_detail_maps.png); 
+        background-image: url(../img/project_detail/project_detail_suite_map.jpg); 
+        background-size: auto; 
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        .transport_wrapper_in {
+            max-height: 150px;
+        }
+    }
+    .transport_wrapper {
+        &_in {
+            width: 800px;
+            background: rgba($color: v.$darkPurple, $alpha: .95);
+            text-align: center;
+            max-width: 100%;
+            padding: 10px; 
+            .icon_item {
+                span {
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    font-size: 11px;
+                    display: block;
+                    color: v.$white;
+                    padding: 10px 0px;
+                    &:nth-child(1) {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                }
+                img {
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
+
+.project_detail_transport2 {
+    @include m.responsive(1200) {
+        background-image: url(../img/project_detail/project_detail_villa_map.jpg); 
         background-size: auto; 
         background-repeat: no-repeat;
         min-height: 100vh;

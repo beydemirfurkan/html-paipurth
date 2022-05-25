@@ -230,6 +230,31 @@ section.newsletter .input-group a {
   -webkit-text-fill-color: transparent;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 15s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotatedLogoSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotatedLogo {
+  animation: rotatedLogoSpin infinite 9s linear;
+}
+
 .fs-10 {
   font-size: 10px;
 }
@@ -275,10 +300,8 @@ section.newsletter .input-group a {
 }
 
 header {
-  transition: all 0.3s ease-in-out;
-}
-header .header_wrapper {
   padding: 20px 0px;
+  transition: all 0.3s ease-in-out;
 }
 header .header_wrapper .nav-link {
   color: #000 !important;
@@ -301,8 +324,10 @@ header .language .dropdown-menu {
 .contact_header_btn {
   background: #1d5699;
   color: #fff;
-  width: 125px;
-  border-radius: 5px;
+  width: 150px;
+  padding: 10px 0px;
+  border-radius: 0px;
+  line-height: 1.4;
   border: 1px solid #1d5699;
   -webkit-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -362,7 +387,7 @@ header .language .dropdown-menu {
   padding: 30px 20px;
 }
 #contactUs h5 {
-  color: #d16d6d;
+  color: #1d5699;
   font-size: 1.6rem;
   font-weight: bold;
 }
@@ -401,7 +426,7 @@ header .language .dropdown-menu {
   box-shadow: 0;
 }
 #contactUs .btnContact {
-  background-color: #d16d6d;
+  background-color: #1d5699;
   color: #fff;
   transition: all 0.3s ease-in-out;
   width: 100%;
@@ -439,6 +464,19 @@ footer .footer_icon_wrap a {
     font-size: 11px !important;
   }
 }
+#privacyModal p {
+  font-size: 13.5px;
+}
+#privacyModal ul {
+  padding: 20px;
+  list-style-type: disc;
+}
+#privacyModal ul li {
+  font-size: 13.5px;
+  font-weight: lighter;
+  padding-bottom: 10px;
+}
+
 section.hero .hero_wrapper .hero_title {
   position: relative;
   font-family: "Oswald", sans-serif;
@@ -558,24 +596,15 @@ section.about .nav-link.active .about_features_inner img {
 
 /* ABOUT Section */
 .about_mini_info_bottom {
-  background: #3d415d;
   padding: 10px;
   margin: 20px 0px;
 }
-@media (min-width: 768px) {
-  .about_mini_info_bottom {
-    padding: 40px 20px;
-  }
-}
-@media (min-width: 768px) {
-  .about_mini_info_bottom_detail {
-    padding-left: 15px;
-  }
+.about_mini_info_bottom img {
+  filter: brightness(20%);
 }
 .about_mini_info_bottom_detail h4 {
   margin: 0;
   padding: 0;
-  color: #fff;
   font-weight: 500;
   line-height: normal;
 }
@@ -583,10 +612,27 @@ section.about .nav-link.active .about_features_inner img {
   margin: 0;
   padding: 0;
   font-size: 13px;
-  color: #fff;
   font-style: italic;
-  font-weight: lighter;
   letter-spacing: -0.5px;
+}
+@media (min-width: 768px) {
+  .about_mini_info_bottom {
+    background: #3d415d;
+    padding: 40px 20px;
+  }
+  .about_mini_info_bottom img {
+    filter: none;
+  }
+  .about_mini_info_bottom_detail {
+    padding-left: 15px;
+  }
+  .about_mini_info_bottom_detail h4 {
+    color: #fff;
+  }
+  .about_mini_info_bottom_detail span {
+    color: #fff;
+    font-weight: lighter;
+  }
 }
 
 .about_features {
@@ -920,6 +966,9 @@ section.reference .swiper_reference .swiper-slide img {
   font-weight: 500;
 }
 
+.project_detail_backface::selection {
+  background-color: transparent !important;
+}
 .project_detail_backface .swiper-slide {
   margin-right: 30px;
 }
@@ -947,7 +996,7 @@ section.reference .swiper_reference .swiper-slide img {
   max-width: 100%;
 }
 @media (min-width: 768px) {
-  .project_detail_backface .backfaceSwiper {
+  .project_detail_backface .backfaceSwiper, .project_detail_backface .infaceSwiper {
     min-height: 100vh !important;
     height: 100%;
   }
@@ -955,7 +1004,7 @@ section.reference .swiper_reference .swiper-slide img {
 
 @media (min-width: 1200px) {
   .project_detail_transport {
-    background-image: url(../img/project_detail/project_detail_maps.png);
+    background-image: url(../img/project_detail/project_detail_suite_map.jpg);
     background-size: auto;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -984,6 +1033,40 @@ section.reference .swiper_reference .swiper-slide img {
   font-weight: bold;
 }
 .project_detail_transport .transport_wrapper_in .icon_item img {
+  width: 30px;
+}
+
+@media (min-width: 1200px) {
+  .project_detail_transport2 {
+    background-image: url(../img/project_detail/project_detail_villa_map.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+  .project_detail_transport2 .transport_wrapper_in {
+    max-height: 150px;
+  }
+}
+.project_detail_transport2 .transport_wrapper_in {
+  width: 800px;
+  background: rgba(61, 65, 93, 0.95);
+  text-align: center;
+  max-width: 100%;
+  padding: 10px;
+}
+.project_detail_transport2 .transport_wrapper_in .icon_item span {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 11px;
+  display: block;
+  color: #fff;
+  padding: 10px 0px;
+}
+.project_detail_transport2 .transport_wrapper_in .icon_item span:nth-child(1) {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.project_detail_transport2 .transport_wrapper_in .icon_item img {
   width: 30px;
 }
 
@@ -1101,9 +1184,11 @@ section.reference .swiper_reference .swiper-slide img {
     font-size: 1.2rem;
   }
 }
-.catalog_wrapper {
-  height: 500px;
-  overflow-y: scroll;
+@media (min-width: 768px) {
+  .catalog_wrapper {
+    height: 500px;
+    overflow-y: scroll;
+  }
 }
 .catalog_wrapper .btn-download {
   background: #3d415d;
@@ -1146,7 +1231,78 @@ section.reference .swiper_reference .swiper-slide img {
     width: calc(100% - 100px);
   }
   .karl-viewer .flipbook-main-wrapper {
-    top: 190px;
+    top: 90px;
+  }
+}
+
+.virtualPage .btn-bau {
+  text-shadow: black 2px 2px 5px;
+  background: #2bff6c;
+  border: 1px solid #2bff6c;
+  transition: all 0.3s ease-in-out;
+}
+.virtualPage .btn-baum {
+  text-shadow: black 2px 2px 5px;
+  background: #d4d3ff;
+  border: 1px solid #d4d3ff;
+  transition: all 0.3s ease-in-out;
+}
+.virtualPage .btn-papier {
+  text-shadow: black 2px 2px 5px;
+  background: #c4a499;
+  border: 1px solid #c4a499;
+  transition: all 0.3s ease-in-out;
+}
+.virtualPage .btn-papier:hover .hero-img {
+  filter: brightness(0%);
+}
+.virtualPage .hero-text {
+  z-index: 2;
+  margin-top: -20px;
+}
+.virtualPage .bau-inner .hero-img {
+  z-index: 2;
+  filter: brightness(20%);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.virtualPage .bau-inner:hover {
+  cursor: pointer;
+}
+.virtualPage .bau-inner:hover .hero-text {
+  display: none;
+}
+.virtualPage .bau-inner:hover .hero-img {
+  filter: none;
+}
+.virtualPage main {
+  padding: 0px 0px;
+  margin: 0;
+}
+.virtualPage main > div > div {
+  height: 50vh;
+  overflow: hidden;
+  max-width: 100%;
+}
+.virtualPage .hero-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 992px) {
+  .virtualPage .hero-text {
+    margin-top: 0;
+  }
+  .virtualPage main {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+  .virtualPage main div {
+    height: 100%;
+  }
+  .virtualPage main div div {
+    height: 100%;
   }
 }
 

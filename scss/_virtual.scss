@@ -1,0 +1,106 @@
+@use 'global'as g;
+@use 'mixin'as m;
+
+
+
+.virtualPage {
+    .btn {
+        &-bau {
+            text-shadow: rgb(0, 0, 0) 2px 2px 5px;
+            background: #2bff6c;
+            border: 1px solid #2bff6c;
+            transition: all .3s ease-in-out;
+        }
+
+        &-baum {
+            text-shadow: rgb(0, 0, 0) 2px 2px 5px;
+            background: #d4d3ff;
+            border: 1px solid #d4d3ff;
+            transition: all .3s ease-in-out;
+        }
+
+        &-papier {
+            text-shadow: rgb(0, 0, 0) 2px 2px 5px;
+            background: #c4a499;
+            border: 1px solid #c4a499;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                .hero-img {
+                    filter: brightness(0%);
+                }
+            }
+        }
+
+    }
+
+    .hero {
+        &-text {
+            z-index: 2;
+            margin-top: -20px;
+        }
+
+        &-img {}
+    }
+
+    .bau-inner {
+        .hero-img {
+            z-index: 2;
+            filter: brightness(20%);
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+        }
+
+        &:hover {
+            .hero-text {
+                display: none;
+            }
+            cursor: pointer;
+
+            .hero-img {
+                filter: none;
+            }
+        }
+    }
+
+
+    main {
+        padding: 0px 0px;
+        margin: 0;
+    }
+
+
+    main>div>div {
+        height: calc(100vh/ 2);
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+
+    .hero-img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    @include m.responsive(992) {
+        .hero-text {
+            margin-top: 0;
+        }
+
+        main {
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+
+            div {
+                height: 100%;
+
+                div {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+}
