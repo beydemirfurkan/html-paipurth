@@ -240,7 +240,7 @@ section.newsletter {
             radius:0;
             style:solid;
             width:2.5px;
-            color:v.$white;
+            color: v.$white;
         }
         background: transparent;
         &::placeholder {
@@ -282,26 +282,4 @@ section.newsletter {
     }
   }
 
-@keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
 
-
-
-  @keyframes rotatedLogoSpin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  .rotatedLogo {
-    animation: rotatedLogoSpin infinite 9s linear;
-  }

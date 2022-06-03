@@ -29,7 +29,7 @@
                 <div class="d-md-flex justify-content-center justify-content-md-between align-items-center py-4">
                     <h1>Projeler</h1>
                    
-                    <div class="d-flex gap-3 filter-menu flex-wrap">
+                    <div class="d-flex gap-3 filter-menu flex-wrap d-none">
                         <div class="btn-filter active"><button data-filter="*" class="btn btn-outline-dark" >Tümü</button></div>
                         <div class="btn-filter"><button data-filter=".housing" class="btn btn-outline-dark">Konut</button></div>
                         <div class="btn-filter"><button data-filter=".villa" class="btn btn-outline-dark">Villa</button></div>
@@ -40,43 +40,56 @@
                 </div>
                 <div class="all_project_wrapper">
                     <div class="row justify-content-between filter-content">
-                        <!-- Single Item -->
-                        <div class="col-12 col-md-6 col-lg-4 filter-item all housing mb-4">
-                            <div class="project_item_inner position-relative">
-                                <a href="project_detail_suite.html">
-                                    <img src="img/project/project2_1.jpg" alt="">
-                                    <div class="project_item_inner_text px-3 pt-3 position-absolute bottom-0 w-100 bg-dark bg-opacity-75 text-white">
-                                        <h5 class="text-uppercase fw-light m-0 text-white">huzurun doğru adresi</h5>
-                                        <h4 class="text-uppercase fw-bold m-0 text-white">paipurth suite</h4>
-                                        <div class="d-flex justify-content-between align-items-center py-2">
-                                            <span class="fs-09 text-white"><i class="bi bi-geo-alt-fill me-1"></i> Kocaeli</span>
-                                            <a class="btn bg-white px-4 text-uppercase fs-07 fw-bold" href="#">İncele</a>
-                                        </div>
+                        <!--                        -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <figure class="snip0068 yellow" onclick="document.location.href='project_detail_suite.html'">
+                                <img src="img/project/project3.png" alt="">
+                                <figcaption>
+                                    <div>
+                                        <h3>Paipurth Villa</h3>
                                     </div>
-                                </a>
-                            </div>
+                                    <div><span>İncele</span></div>
+                                    <a href="project_detail_villa.html"></a>
+                                </figcaption>
+                            </figure>
                         </div>
-                        <!-- End Single Item -->
 
-                        <!-- Single Item -->
-                        <div class="col-12 col-md-6 col-lg-4 filter-item villa all continuing mb-4">
-                            <div class="project_item_inner position-relative">
-                                <a href="project_detail_villa.html">
-                                    <img src="img/project/project3.png" alt="">
-                                    <div class="project_item_inner_text px-3 pt-3 position-absolute bottom-0 w-100 bg-dark bg-opacity-75 text-white">
-                                        <h5 class="text-uppercase fw-light m-0 text-white">huzurun doğru adresi</h5>
-                                        <h4 class="text-uppercase fw-bold m-0 text-white">paipurth villa</h4>
-                                        <div class="d-flex justify-content-between align-items-center py-2">
-                                            <span class="fs-09 text-white"><i class="bi bi-geo-alt-fill me-1"></i> Kocaeli</span>
-                                            <a class="btn bg-white px-4 text-uppercase fs-07 fw-bold" href="#">İncele</a>
-                                        </div>
+                        <!--                    -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <figure class="snip0068 yellow" onclick="document.location.href='project_detail_suite.html'">
+                                <img src="img/project/project2_1.jpg" alt="">
+                                <figcaption>
+                                    <div>
+                                        <h3>Paipurth Suite</h3>
                                     </div>
-                                </a>
-                            </div>
+                                    <div><span>İncele</span></div>
+                                    <a href="project_detail_villa.html"></a>
+                                </figcaption>
+                            </figure>
                         </div>
+
+
+
+
+                        <!--                        -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <figure class="snip0068 yellow">
+                                <img src="img/project/project1.png" alt="">
+                                <figcaption>
+                                    <div>
+                                        <h3>Paipurth City</h3>
+                                    </div>
+                                    <div><span>İncele</span></div>
+                                    <a href="project_detail_villa.html"></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+
+
                         <!-- End Single Item -->
                         <!-- Single Item -->
-                        <div class="col-12 col-md-6 col-lg-4 filter-item all complete mb-4">
+                        <div class="col-12 col-md-6 col-lg-4 filter-item all complete mb-4 d-none">
                             <div class="project_item_inner position-relative">
                                 <a href="#">
                                     <img src="img/project/project1.png" alt="">
@@ -112,7 +125,7 @@
                     <div>
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="E-mail adresiniz" aria-label="Recipient's username" aria-describedby="button-addon2">
-                            <a class="btn" href="javascript:void(0)">send</a>
+                            <a class="btn" href="javascript:void(0)">gönder</a>
                           </div>
                     </div>
 
@@ -142,6 +155,13 @@
                 });
             });
         }
+
+        /* Demo purposes only */
+        $("figure").mouseleave(
+            function() {
+                $(this).removeClass("hover");
+            }
+        );
     </script>
 </body>
 </html>

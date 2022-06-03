@@ -387,7 +387,7 @@ section.reference {
 
 .project_wrapper {
   .project_inner {
-    width: 400px;
+    width: 420px;
     max-width: 100%;
     text-align: center;
     position: relative;
@@ -422,6 +422,11 @@ section.reference {
       .project_inner_img img {
         @include m.transition();
         overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
     }
   }
@@ -491,6 +496,107 @@ section.reference {
   h3 {
     padding-top: 10px;
   }
+}
+
+figure.snip0068 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: #000000;
+  text-align: center;
+  color: #fff;
+}
+
+figure.snip0068 * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+figure.snip0068 img {
+  opacity: 1;
+  width: 100%;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+figure.snip0068 figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 18%;
+  right: 18%;
+  height: 100%;
+}
+
+figure.snip0068 figcaption > div {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  height: 60%;
+}
+
+figure.snip0068 h3,
+figure.snip0068 span {
+  margin: 0;
+  padding: 10px 15px;
+  display: inline-block;
+  width: 100%;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+figure.snip0068 h3 {
+  background: #333333;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+}
+
+figure.snip0068 span {
+  background: #ffffff;
+  color: #4d4d4d;
+  -webkit-transform: translate3d(0%, -100%, 0);
+  transform: translate3d(0%, -100%, 0);
+}
+
+figure.snip0068 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: #ffffff;
+}
+
+
+figure.snip0068.yellow {
+  background: v.$darkPurple;
+}
+
+figure.snip0068.yellow h3 {
+  background: #000000;
+}
+
+figure.snip0068:hover img,
+figure.snip0068.hover img {
+  opacity: 0.35;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+figure.snip0068:hover figcaption h3,
+figure.snip0068.hover figcaption h3 {
+  -webkit-transform: translate3d(0%, 100%, 0);
+  transform: translate3d(0%, 100%, 0);
+}
+
+figure.snip0068:hover figcaption span,
+figure.snip0068.hover figcaption span {
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
 }
 
 
